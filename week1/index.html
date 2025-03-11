@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Course Home Page website.">
+        <meta name="author" content="Silvia Ferran">
+        <title> WDD 231 - Course Home Page - Silvia Ferran </title>
+        <link rel="stylesheet" href="styles/home-page-large.css">
+        <link rel="stylesheet" href="styles/home-page.css" media="(max-width: 768px)">
+        <script src="scripts/home_page.js" defer></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="profile-pic-container">
+                <img src="images/profile.webp" alt="Profile picture" class="profile" loading="lazy">
+                <span class="name">Silvia Ferran</span>
+            </div>
+            <section class="nav">
+                <nav>
+                    <button type="button" id="menu" aria-label="Toggle menu"></button>
+                    <ul class="nav-list" id="nav-list">   
+                        <li><a href="#" class="active"  aria-label="Go to Home">Home</a></li>
+                        <li><a href="#" aria-label="Go to Chamber">Chamber</a></li>
+                        <li><a href="#" aria-label="Go to GitHub">GitHub Profile</a></li>
+                        <li><a href="https://www.linkedin.com/in/silvia-ferran-0ba8677a/" aria-label="Go to LinkedIn">LinkedIn</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <h1>Home</h1>
+            <section>
+                <div class="container">
+                    <div class="sidebar">
+                        <h2>Course Work</h2>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                        
+                    <div class="image-section">
+                        <h2>Colombia</h2>
+                        <img src="images/colombia.webp" alt="Cocora valley">
+                        <p>Cocora Valley</p>
+                    </div>
+                </div>
+            </section>
+            <section class="course-certification-section">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div class="course-certificates">
+                    <div class="filter-buttons">
+                        <button id="all-courses">All</button>
+                        <button id="cse-courses">CSE</button>
+                        <button id="wdd-courses">WDD</button>
+                    </div>
+                    <div class="course-buttons">
+                        <button id="course-110">CSE 110</button>
+                        <button id="course-130">WDD 130</button>
+                        <button id="course-111">CSE 111</button>
+                        <button id="course-210">CSE 210</button>
+                        <button id="course-131">WDD 131</button>
+                        <button id="course-231">WDD 231</button>
+                    </div>
+                    <div class="total-credits">
+                        <p>Total Credits: <span id="total-credits">0</span></p>
+                    </div>                    
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="footer-section">
+                <div>
+                    <p>©<span id="current-year"></span> <span class="name">🌸 Silvia Ferran 🌸</span> Colombia <span class="flag"><img src="images/colombian_flag.png" alt="Colombia Flag"></span></p>
+                    <p2 class="last-modified"></p2>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>
