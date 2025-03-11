@@ -200,9 +200,10 @@ h1 {
     margin: 5px 0;
 }
 
-.name {
+.namef {
     font-weight: bold;
     color: black;
+    font-size: 2rem;
 }
 
 .flag img {

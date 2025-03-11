@@ -30,9 +30,9 @@ body {
 .name {
     padding: 20px;
     font-weight: bolder;
-    color: #FAF3DD;
     margin-top: 60px;
     font-size: 2rem;
+    color: white;
 }
 
 h1 {
@@ -217,9 +217,10 @@ h1 {
     margin: 5px 0;
 }
 
-.name {
+.namef {
     font-weight: bold;
     color: black;
+    font-size: 1.5rem;
 }
 
 .flag img {
@@ -248,7 +249,7 @@ h1 {
 
 .course-buttons button.not-completed {
     background-color:#696D7D;
-    color: #FAF3DD;
+    color:white;
     font-weight: bold;
 }
 
