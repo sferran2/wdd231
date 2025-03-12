@@ -149,9 +149,9 @@ h1 {
 }
 
 .course-certification-section {
-    width: 100%; 
+    width: 100%;
     background-color: #8FC0A9;
-    padding: 20px;
+    margin-left: 0;
 }
 
 .filter-buttons button {
@@ -194,6 +194,7 @@ h1 {
     padding: 20px;
     text-align: center;
     font-size: 1rem;
+    margin-left: 0;
 }
 
 .footer-container p {
