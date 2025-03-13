@@ -5,7 +5,7 @@ const formattedDate = currentDate.toLocaleString();
 document.querySelector('.last-modified').textContent = `Last Access: ${formattedDate}`;
 
 const menuButton = document.querySelector('#menu');
-const nav = document.querySelector('.nav');
+const nav = document.querySelector('#animeteme');
 
 menuButton.addEventListener('click', () => {
   nav.classList.toggle('open'); 
