@@ -1,0 +1,108 @@
+[
+    {
+        "familyName": "Eliason",
+        "movingDate": 2020,
+        "numberPeopleFamily": 3,
+        "visitBishopric": true,
+        "members": [
+            {
+              "name": "Aaron",
+              "gender": "Male",
+              "birthdate": "05/22/1989"
+            },
+            {
+              "name": "Mared",
+              "gender": "Female",
+              "birthdate": "10/04/1990"
+            },
+            {
+              "name": "Loucille",
+              "gender": "female",
+              "birthdate": "12/28/2017"
+            }
+        ]
+    },
+    {
+        "familyName": "Cabrera",
+        "movingDate": 2018,
+        "numberPeopleFamily": 4,
+        "visitBishopric": true,
+        "members": [
+            {
+              "name": "Diego",
+              "gender": "Male",
+              "birthdate": "01/12/1987"
+            },
+            {
+              "name": "Berenice",
+              "gender": "Female",
+              "birthdate": "08/30/1989"
+            },
+            {
+              "name": "Alana",
+              "gender": "female",
+              "birthdate": "02/25/2020"
+            },
+            {
+              "name": "Gia",
+              "gender": "female",
+              "birthdate": "05/10/2022"
+            }
+        ]
+    },
+    {
+        "familyName": "Ferran",
+        "movingDate": 2022,
+        "numberPeopleFamily": 3,
+        "visitBishopric": true,
+        "members": [
+            {
+              "name": "Skyler",
+              "gender": "Male",
+              "birthdate": "08/22/1988"
+            },
+            {
+              "name": "Silvia",
+              "gender": "Female",
+              "birthdate": "07/27/1984"
+            },
+            {
+              "name": "Aviendha",
+              "gender": "female",
+              "birthdate": "02/11/2017"
+            }
+        ]
+    },
+    {
+        "familyName": "Florez",
+        "movingDate": 2006,
+        "numberPeopleFamily": 2,
+        "visitBishopric": true,
+        "members": [
+            {
+              "name": "Wenslesnao",
+              "gender": "Male",
+              "birthdate": "03/13/1967"
+            },
+            {
+              "name": "Maria",
+              "gender": "Female",
+              "birthdate": "09/18/1968"
+            }
+        ]
+    },
+    {
+        "familyName": "Rodriguez",
+        "movingDate": 2025,
+        "numberPeopleFamily": 1,
+        "visitBishopric": false,
+        "members": [
+            {
+              "name": "Pastora",
+              "gender": "Female",
+              "birthdate": "11/01/1992"
+            }
+        ]
+    }
+]
+
