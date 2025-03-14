@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore and connect with local businesses, services, and professionals through our Chamber of Commerce Directory.">
+    <meta name="author" content="Silvia Ferran">
+
+    <meta property="og:title" content="Chamber of Commerce : Directory">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://sferran2.github.io/wdd231/chamber/images/thumbail.png">
+    <meta property="og:url" content="https://sferran2.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Find local businesses and professional services in our Chamber of Commerce Directory.">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Santander, Colombia - Chamber of Commerce Directory">
+    <meta name="twitter:description" content="Explore and connect with local businesses and services in Santander, Colombia.">
+    <meta name="twitter:image" content="https://sferran2.github.io/wdd231/chamber/images/thumbail.png">
+    <meta name="twitter:url" content="https://sferran2.github.io/wdd231/chamber/directory.html">
+
+    <title>WDD 231 - Santander, Colombia Chamber of Commerce: Directory - Silvia Ferran</title>
+    <link rel="stylesheet" href="styles/chamberLarge.css">
+    <link rel="stylesheet" href="styles/chamberSmall.css" media="(max-width: 768px)">
+    <script src="scripts/chamber.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logoContainer">
+            <img src="images/logo.webp" alt="cc-logo" class="logo" loading="lazy">
+            <div class="chamber">
+                <span>Santander</span>
+                <span class="type"> Chamber of Commerce</span>
+            </div>
+                <section class="nav">
+                    <nav id="animeteme">
+                        <ul class="nav-list" id="nav-list">
+                            <li><a href="#" aria-label="Go to Home">Home</a></li>
+                            <li><a href="#" class="active" aria-label="Bussines Directory">Directory</a></li>
+                            <li><a href="#" aria-label="Join">Join</a></li>
+                            <li><a href="#" aria-label="Discover">Discover</a></li>
+                            <li>
+                                <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+                                    <img src="images/darkmode.svg" alt="Dark Mode Toggle" width="24">
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        <h1>Business Directory</h1>
+        <div id="cards"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <p><strong>Santander Chamber of Commerce</strong></p>
+                <p>Calle 37 # 4 23</p>
+                <p>Bucaramanga, Colombia</p>
+                <p>info@santander.org</p>
+                <p>(316) 345-1852</p>
+            </div>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/">
+                    <img src="images/facebook.webp" alt="Facebook" width="30">
+                </a> 
+                <a href="https://x.com/?lang=en">
+                    <img src="images/x.webp" alt="X.com" width="30"> 
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="images/instagram.webp" alt="Instagram" width="30"> 
+                </a>
+            </div>
+            <div class="footer-credits">
+                <p>WDD231 Class Project</p>
+                <p>Silvia Ferran</p>
+                <p>©<span id="current-year"></span> <span class="chambercommerce">Santandet Chamber of Commerce</span>
+                <p class="last-modified"></p>
+            </div>
+
+
+        </div>   
+    </footer>
+</body>
+</html>

@@ -1,0 +1,103 @@
+{
+    "businesses": [
+      {
+        "companyName": "Minex",
+        "address": "Calle 97a # 8 10",
+        "phoneNumber": "322-238-9963",
+        "email": "comercial@minex.com.co" ,
+        "imageurl": "https://minex.com.co/wp-content/uploads/2025/01/LOGO-MINEX-400PX-100PX.png",
+        "website" : "https://minex.com.co/"
+      },
+      {
+        "companyName": "Santander al Extremo",
+        "address": "Calle 36 # 27 71",
+        "phoneNumber": "316-0484-853",
+        "email": "info@santanderalextremo.com",
+        "imageurl": "https://www.santanderalextremo.com/wp-content/uploads/2019/06/logo-h-140.png",
+        "website": "https://www.santanderalextremo.com/en/home/"
+      },
+      {
+        "companyName": "Ecopetrol",
+        "address": "Carrera 13 No. 36 - 24",
+        "phoneNumber": "310-315-8600",
+        "email": "notificaciones@ecopetrol.com.co",
+        "imageurl": "https://www.ecopetrol.com.co/wps/contenthandler/dav/themelist/eco-tema-principal1/images/EcopetrolLogoFooter.svg",
+        "website": "https://www.ecopetrol.com.co/wps/portal/"
+      },
+      {
+        "companyName": "Nagara Store",
+        "address": "Cra. 17C #55 40 ",
+        "phoneNumber": "310-253-0738",
+        "email": "contactanos_nagarastore.com",
+        "imageurl": "https://calzadobucaramanga.tiendanagara.com/wp-content/uploads/2023/04/tienda-nagara-300x183.png",
+        "website": "https://calzadobucaramanga.tiendanagara.com"
+      },
+      {
+        "companyName": "Marsupial",
+        "address": "CALLE 21 Nº 20 55",
+        "phoneNumber": "318-304-5429",
+        "email": "contactanos@marsupial.com",
+        "imageurl": "https://marsupial.com.co/wp-content/uploads/2021/03/LOGOS-MARSUPIAL-negro-e1700247786971.png",
+        "website": "https://marsupial.com.co/"
+      },
+      {
+        "companyName": "Calzado Bucaramanga",
+        "address": "Calle 6 sur # 71D 87",
+        "phoneNumber": "320-672-8889",
+        "email": "tiendavirtual@calzadobucaramanga.com",
+        "imageurl": "https://calzadobucaramanga.vtexassets.com/assets/vtex/assets-builder/calzadobucaramanga.calzadobucaramanga-theme/1.0.1/images/logo-cb___1023837999cfd46cab0f40dcc3160a94.svg",
+        "website": "https://www.calzadobucaramanga.com/"
+      },
+      {
+        "companyName": "Soliplast",
+        "address": "AV Quebradaseca # 14 44",
+        "phoneNumber": "310-257-5788",
+        "email": "asesorcomercialzona1@soliplast.com.co",
+        "imageurl": "https://soliplast.com/wp-content/uploads/2020/09/logo-soliplast.png.webp",
+        "website": "https://soliplast.com/"
+      },
+      {
+        "companyName": "Replasander",
+        "address": "Carrera 14 # 57 139",
+        "phoneNumber": "31-833-8448",
+        "email": "replasanderltda@gmail.com",
+        "imageurl": "https://replasander.com.co/wp-content/uploads/2024/10/logo-web-home.webp",
+        "website":"https://replasander.com.co/"
+      },
+      {
+        "companyName": "Solla Nutricion Animal",
+        "address": "CL 8 # 9 105",
+        "phoneNumber": " 315 364-8940",
+        "email": "servicioalcliente@solla.com",
+        "imageurl": "https://www.solla.com/wp-content/uploads/2021/03/logo.png",
+        "website": "https://www.solla.com/"
+      },
+      {
+        "companyName": "Productos La Victoria",
+        "address": "Cra 21 #48 35",
+        "phoneNumber": "317-374-9349",
+        "email": "servcliente@plavictoria.com.co",
+        "imageurl": "https://productoslavictoria.co/wp-content/uploads/2022/09/logo-vicky-768x396.webp",
+        "website": "https://productoslavictoria.co/"
+      },
+      {
+        "companyName": "Metalteco",
+        "address": "Km. 6 Autopista",
+        "phoneNumber": "315-270-2901",
+        "email": "contacto@metalteco.com",
+        "imageurl": "https://metalte2.b-cdn.net/wp-content/uploads/2022/08/metalteco-logo-registrado-web-v2.svg",
+        "website": "https://metalteco.com/"
+      },
+      {
+        "companyName": "Marval",
+        "address": "Cra. 29 # 45 45",
+        "phoneNumber": "300-913=0900",
+        "email": "contactanos@marval.com",
+        "imageurl": "https://marval.com.co/wp-content/uploads/2022/03/Grupo-429.png",
+        "website":"https://marval.com.co/"
+      }
+    ]
+}
+
+    
+      
