@@ -10,6 +10,7 @@ html {
 body {
     font-size: 16px;
     font-family: "Roboto", serif;
+    font-style: italic;
     background-color: #E2D6A2;
 }
 
@@ -198,6 +199,10 @@ h1 {
 
 .footer-credits p {
     margin: 3px 0;
+}
+
+footer.footer{
+    min-height: 100px;
 }
 
 .last-modified {
