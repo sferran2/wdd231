@@ -78,7 +78,7 @@ body {
 
 .nav-list a.active {
     color: black;
-    background-color: #287271;
+    background-color: #ebc069;
     font-weight: bold;
     border-radius: 4px;
     padding: 5px 10px;
@@ -122,9 +122,9 @@ h1 {
 #cards section {
     border-radius: 13px;
     padding: 20px;
-    background-color: #359795;
+    background-color: #EBC069;
     width: 300px;
-    height: 200px; /* Increased height for better spacing */
+    height: 200px; 
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -132,22 +132,155 @@ h1 {
 }
 
 #cards img {
-    width: 160px; /* Standardized logo size */
+    width: 160px; 
     height: auto;
-    flex-shrink: 0;
 }
 
 #cards p {
     font-size: 0.85rem;
     text-align: center;
     line-height: 0%;
+    color: black;
 }
 
 #cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 20px;
     padding: 20px;
     justify-content: center;
 }
+
+.footer {
+    background-color: #E76F51;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    max-width: 1200px;
+}
+
+.footer-info {
+    text-align: left;
+    font-size: 18px;
+    color: #000;
+}
+
+.footer-info p {
+    margin: 3px 0;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-icons img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.footer-credits {
+    text-align: right;
+    font-size: 18px;
+    color: #000;
+}
+
+.footer-credits p {
+    margin: 3px 0;
+}
+
+.last-modified {
+    font-style: italic;
+    font-size: 18px;
+}
+
+#business-table-container {
+    width: 90%;
+    margin-top: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 60px;
+    border: 2px solid #000;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+thead {
+    background-color: #f1a27e;
+    font-weight: bold;
+}
+
+
+thead th {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+
+tbody tr {
+    border-bottom: 1px solid black;
+}
+
+
+tbody tr:nth-child(odd) {
+    background-color: #8ab17d; 
+}
+
+
+td {
+    padding: 12px;
+    vertical-align: top;
+}
+
+td a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+.view-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.view-toggle button {
+    background: transparent;
+    border: 2px solid #1f4e79;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.view-toggle button img {
+    width: 40px;
+    height: 40px;
+}
+
+.view-toggle button.active {
+    background-color: #8AB17D;
+}
+
 

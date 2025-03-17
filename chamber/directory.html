@@ -60,12 +60,24 @@
 
     <main>
         <h1>Business Directory</h1>
+
+        <div class="view-toggle">
+            <button id="grid-view" class="active">
+                <img src="images/grid-icon.png" alt="Grid View">
+            </button>
+            <button id="list-view">
+                <img src="images/list-icon.png" alt="List View">
+            </button>
+        </div>
+
         <div id="cards"></div>
+        <div id="business-table-container"></div>
+
     </main>
 
     <footer class="footer">
-        <div class="footer-content">
-            <div>
+        <section class="footer-content">
+            <div class="footer-info">
                 <p><strong>Santander Chamber of Commerce</strong></p>
                 <p>Calle 37 # 4 23</p>
                 <p>Bucaramanga, Colombia</p>
@@ -86,12 +98,10 @@
             <div class="footer-credits">
                 <p>WDD231 Class Project</p>
                 <p>Silvia Ferran</p>
-                <p>©<span id="current-year"></span> <span class="chambercommerce">Santandet Chamber of Commerce</span>
+                <p>©<span id="current-year"></span> <span class="chambercommerce">Santander Chamber of Commerce</span></p>
                 <p class="last-modified"></p>
             </div>
-
-
-        </div>   
+        </section>   
     </footer>
 </body>
 </html>
