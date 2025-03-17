@@ -20,7 +20,7 @@ body {
 .logoContainer {
     display: flex;
     gap: 20px;
-    background-color: #E76F51;
+    background-color: #EB7C55;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -156,7 +156,7 @@ h1 {
 }
 
 .footer {
-    background-color: #E76F51;
+    background-color: #EB7C55;
     padding: 30px;
     text-align: center;
     display: flex;
