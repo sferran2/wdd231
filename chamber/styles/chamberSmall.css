@@ -60,6 +60,7 @@
     .footer-info {
         font-size: 14px;
         font-weight: bold;
+        color: white;
     }
     
     .footer-icons {
@@ -69,18 +70,21 @@
     .footer-icons img {
         width: 30px;
         height: 30px;
+        color: white;
     }
     
     
     .footer-credits {
         font-size: 14px;
         font-weight: bold;
+        color: white;
     }
     
 
     .last-modified {
         font-size: 14px;
         font-weight: bold;
+        color: white;
     }
 
 
