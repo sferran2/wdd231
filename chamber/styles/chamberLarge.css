@@ -143,6 +143,10 @@ h1 {
     color: black;
 }
 
+#cards p a{
+    color: black;
+}
+
 #cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));

@@ -59,6 +59,7 @@
     
     .footer-info {
         font-size: 14px;
+        font-weight: bold;
     }
     
     .footer-icons {
@@ -73,11 +74,13 @@
     
     .footer-credits {
         font-size: 14px;
+        font-weight: bold;
     }
     
 
     .last-modified {
         font-size: 14px;
+        font-weight: bold;
     }
 
 
