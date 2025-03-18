@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
             let logo = document.createElement("img");
             logo.setAttribute("src", business.imageurl);
             logo.setAttribute("loading", "lazy");
-            logo.setAttribute("crossorigin","anonymous");
 
             let address = document.createElement("p");
             address.textContent = `Address: ${business.address}`;
