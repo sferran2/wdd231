@@ -17,6 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const formattedDate = currentDate.toLocaleString();
     document.querySelector('.last-modified').textContent = `Last Access: ${formattedDate}`; 
 
+    const menuButton = document.querySelector('#menu');
+    const nav = document.querySelector('#animeteme');
+
+    menuButton.addEventListener('click', () => {
+    nav.classList.toggle('open'); 
+    menuButton.classList.toggle('open'); 
+    });
+
     const url = 'data/members.json';
     const cardsContainer = document.querySelector("#cards");
     const tableContainer = document.getElementById("business-table-container");
@@ -127,3 +135,5 @@ document.addEventListener("DOMContentLoaded", function () {
         listViewBtn.classList.add("active");
     });
 });
+
+
