@@ -1,0 +1,23 @@
+.card{
+    border: 1px solid rebeccapurple;
+    background-color: azure;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card h2{
+    color: black;
+    margin: .3rem 0;
+}
+
+.card #description{
+    text-transform: capitalize;
+    color: brown;
+    margin: .3rem 0;
+}
+
+.card #temperature {
+    font-size: 2rem;
+    color:cadetblue;
+    margin: .3rem 0;
+}
