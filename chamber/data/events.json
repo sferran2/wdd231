@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "date": "2024-10-27",
+      "startTime": "09:30",
+      "endTime": "11:00",
+      "color": "#007bff",
+      "eventName": "Business Networking Mixer",
+      "description": "An informal evening event where local business owners and professionals can connect, exchange ideas, and build relationships.",
+      "time" : "7:00:PM",
+      "place" : "Santander Commerce of Chamber - Main building - Green Salon"
+    },
+    {
+      "date": "2024-11-15",
+      "startTime": "08:00",
+      "endTime": "09:30",
+      "color": "#28a745",
+      "eventName": "Economic Outlook Breakfast",
+      "description": "A morning event featuring industry experts who share insights on market trends, economic forecasts, and business growth opportunities",
+      "place" : "Tony Breakfast Restaurant"
+    }  
+  ]
+}
+
+

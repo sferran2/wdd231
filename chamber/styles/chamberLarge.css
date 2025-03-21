@@ -1,3 +1,4 @@
+/* General */
 
 * {
     box-sizing: border-box;
@@ -110,46 +111,6 @@ body.dark-mode a {
     color: black;
 }
 
-h1 {
-    text-align: center;
-    padding: 30px;
-}
-
-#cards section {
-    border-radius: 13px;
-    padding: 20px;
-    background-color: #EBC069;
-    width: 300px;
-    height: 200px; 
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-
-#cards img {
-    width: 160px; 
-    height: auto;
-}
-
-#cards p {
-    font-size: 0.85rem;
-    text-align: center;
-    line-height: 0%;
-    color: black;
-}
-
-#cards p a{
-    color: black;
-}
-
-#cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
-}
 
 .footer {
     background-color: #EB7C55;
@@ -200,7 +161,7 @@ h1 {
     margin: 3px 0;
 }
 
-footer.footer{
+footer.footer {
     min-height: 100px;
 }
 
@@ -208,6 +169,60 @@ footer.footer{
     font-style: italic;
     font-size: 18px;
 }
+
+/* Directory */
+
+h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+#cards section {
+    border-radius: 13px;
+    padding: 20px;
+    background-color: #EBC069;
+    width: 310px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#cards img {
+    width: 160px;
+    height: auto;
+}
+
+#cards p {
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 0%;
+    color: black;
+}
+
+#cards p a {
+    color: black;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+}
+
+#cards a {
+    display: inline-block;
+    word-break: break-word; 
+  }
+  
+  #cards website-link:hover {
+    text-decoration: underline; 
+  }
 
 #business-table-container {
     width: 90%;
@@ -243,7 +258,7 @@ tbody tr {
 
 
 tbody tr:nth-child(odd) {
-    background-color: #8ab17d; 
+    background-color: #8ab17d;
 }
 
 
@@ -284,5 +299,154 @@ td a:hover {
 .view-toggle button.active {
     background-color: #8AB17D;
 }
+
+/* Home Page*/
+
+.mainContainer {
+    width: 100%;
+    margin: 0 auto;
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    padding: 10px;
+}
+
+.container {
+    margin-top: 300px;
+    margin-left: 1080px;
+}
+
+.button2 {
+    background-color: #ebc069;
+    font-size: 23px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: bolder;
+}
+
+.infoDisplay {
+    display: flex;
+    justify-content: space-between;
+    width: 98%; 
+    margin-bottom: 20px; 
+    margin-left: 10px;
+  }
+  
+.infoDisplay > div {
+    background-color: #8ab17d;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+  
+.events {
+    flex: 2; 
+    margin: 0 10px;
+    height: 400px;
+}
+
+.cardWeather, .forecast {
+    flex: 1; 
+    margin: 0 10px;
+}
+  
+.infoDisplay h2 {
+    background-color: #2A9D8F; 
+    color: black;
+    padding: 10px;
+    text-align: center;
+    margin-top: -20px; 
+    margin-left: -20px; 
+    margin-right: -20px; 
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.event-card {
+    display: flex;
+    align-items: flex-start;
+    background-color: #A2B679 ;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    }
+
+.date-container {
+    border: 3px solid black;
+    padding: 5px;
+    text-align: center;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+.month {
+    font-size: 1.2rem;
+}
+
+.day {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.year {
+    font-size: 1.2em;
+}
+
+.event-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-name {
+    font-weight: bold;
+    margin: 0;
+    font-size: 20px;
+}
+
+.event-time {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.cardWeather img {
+    display: block;
+    margin: 10px auto; 
+    max-width: 100px; 
+}
+
+.cardWeather p {
+    margin: 5px 0;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.forecast p {
+    margin: 5px 0;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 90px;
+}
+
+h3{
+    text-align: center;
+    font-size: 2rem;
+    background-color: #2a9d8f;
+    margin-left: 70px;
+    width: 90%;
+    padding: 20px;
+}
+
+
+
+
+
 
 

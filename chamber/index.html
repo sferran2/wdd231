@@ -6,14 +6,14 @@
         <meta name="description" content="Explore and connect with local businesses, services, and professionals through our Chamber of Commerce Directory.">
         <meta name="author" content="Silvia Ferran">
 
-        <meta property="og:title" content="Chamber of Commerce : Directory">
+        <meta property="og:title" content="Chamber of Commerce : Home Page">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://sferran2.github.io/wdd231/chamber/images/thumbail.png">
         <meta property="og:url" content="https://sferran2.github.io/wdd231/chamber/directory.html">
         <meta property="og:description" content="Find local businesses and professional services in our Chamber of Commerce Directory.">
 
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Santander, Colombia - Chamber of Commerce Directory">
+        <meta name="twitter:title" content="Santander, Colombia - Chamber of Commerce Home Page">
         <meta name="twitter:description" content="Explore and connect with local businesses and services in Santander, Colombia.">
         <meta name="twitter:image" content="https://sferran2.github.io/wdd231/chamber/images/thumbail.png">
         <meta name="twitter:url" content="https://sferran2.github.io/wdd231/chamber/directory.html">
@@ -25,7 +25,7 @@
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/chamberLarge.css">
         <link rel="stylesheet" href="styles/chamberSmall.css" media="(max-width: 768px)">
-        <script src="scripts/chamber.js" defer></script>
+        <script src="scripts/homePage.js" defer></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,8 +44,8 @@
                     <section class="nav">
                         <nav id="animeteme">
                             <ul class="nav-list" id="nav-list">
-                                <li><a href="index.html" aria-label="Go to Home">Home</a></li>
-                                <li><a href="#" class="active" aria-label="Bussines Directory">Directory</a></li>
+                                <li><a href="#" class="active" aria-label="Go to Home">Home</a></li>
+                                <li><a href="directory.html" aria-label="Bussines Directory">Directory</a></li>
                                 <li><a href="#" aria-label="Join">Join</a></li>
                                 <li><a href="#" aria-label="Discover">Discover</a></li>
                                 <li>
@@ -59,18 +59,39 @@
             </div>
         </header>
         <main>
-            <h1>Business Directory</h1>
-            <div class="view-toggle">
-                <button id="grid-view" class="active">
-                    <img src="images/grid-icon.png" alt="Grid View">
-                </button>
-                <button id="list-view">
-                    <img src="images/list-icon.png" alt="List View">
-                </button>
-            </div>
-
-            <div id="cards"></div>
-            <div id="business-table-container"></div>
+            <section class="mainContainer">
+                <div class="container">
+                    <a href="join.html" class="button2" >Stay Updated!</a> 
+                </div>
+            </section>
+            <h1> Welcome to the Santander Chamber of Commerce! </h1>
+            <section class="infoDisplay">
+                <div class="events">
+                    <h2>Mark Your Calendar</h2>
+                    <div id="cardsEventsContainer"></div>
+                </div>
+                <div class="cardWeather">
+                    <h2>Current Weather</h2>
+                    <img id="graphic" src="" alt="">
+                    <p id="description"></p>
+                    <p id="temperatureHigh"></p>
+                    <p id="temperatureLow"></p>
+                    <p id="humidity"></p>
+                    <p id="sunrise"></p>
+                    <p id="sunset"></p>
+                </div>
+                <div class="forecast">
+                    <h2>Weather Forecast</h2>
+                    <p id="day1"></p>
+                    <p id="day2"></p>
+                    <p id="day3"></p>
+                    <p id="day4"></p>
+                </div>
+            </section>
+            <h3>Highlighting Excellence in Our Local Economy</h3>
+            <section class="directory">
+                <div id="cards"></div>
+            </section>
         </main>
         <footer class="footer">
             <section class="footer-content">

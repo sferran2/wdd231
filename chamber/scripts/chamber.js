@@ -1,3 +1,5 @@
+// GENERAL
+
 document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.getElementById("dark-mode-toggle");
     const body = document.body;
@@ -24,6 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
     nav.classList.toggle('open'); 
     menuButton.classList.toggle('open'); 
     });
+
+    // DIRECTORY
 
     const url = 'data/members.json';
     const cardsContainer = document.querySelector("#cards");
@@ -66,10 +70,18 @@ document.addEventListener("DOMContentLoaded", function () {
             let phoneNumber = document.createElement("p");
             phoneNumber.textContent = `Phone: ${business.phoneNumber}`;
 
+            let website = document.createElement("a");
+            website.href = business.website;
+            website.textContent = business.website;
+            website.target = "blank";
+            website.style.color = "black";
+            website.style.font = "7px";
+            website.style.fontWeight = "bold";
+
             let email = document.createElement("p");
             email.innerHTML = `Email: <a href="mailto:${business.email}">${business.email}</a>`;
 
-            card.append(logo, address, phoneNumber, email);
+            card.append(logo, address, phoneNumber, website, email);
             cardsContainer.appendChild(card);
         });
     }
@@ -135,5 +147,4 @@ document.addEventListener("DOMContentLoaded", function () {
         listViewBtn.classList.add("active");
     });
 });
-
 

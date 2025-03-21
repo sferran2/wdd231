@@ -1,66 +1,17 @@
-
+/*General*/
 @media (max-width: 768px) {
-    #cards {
-        grid-template-columns: 1fr; 
-        padding: 10px;
-    }
-
-    #cards section {
-        width: 100%; 
-        padding: 15px;
-        text-align: center;
-        border-radius: 10px;
-    }
-
-    #cards section img {
-        max-width: 90px;
-        height: auto;
-        margin-bottom: 10px;
-    }
-
-    #business-table-container {
-        width: 95%;
-        margin-top: 20px;
-        margin-bottom: 30px;
-        margin-left: 10px;
-        border: 2px solid #000;
-    }
-
-    #business-table-container table {
-        width: 100%;
-        font-size: 12px;
-    }
-
-    #business-table-container {
-        overflow-x: auto;
-    }
-
-    .view-toggle {
-        display: flex;
-        justify-content: center;
-        gap: 5px;
-        padding: 10px;
-    }
-
-    .view-toggle button {
-        padding: 5px;
-        width: 60px;
-        height: 60px;
-        border-color: black;
-    }
-
     #menu {
-        display: block; /* Ensure it is visible */
+        display: block; 
         font-size: 40px;
         background: none;
         border: none;
         color: black;
         cursor: pointer;
         align-self: center;
-        position: absolute; /* Ensures it stays in place */
-        right: 20px; /* Adjust position */
+        position: absolute; 
+        right: 20px;
         top: 50%; 
-        transform: translateY(-50%); /* Centers it vertically */
+        transform: translateY(-50%); 
         z-index: 1000; 
     }
     
@@ -69,7 +20,7 @@
     }
     
     #menu.open::before {
-        content: "❌";
+        content: "✖️";
     }
 
     .header{
@@ -94,9 +45,9 @@
     .chamber {
         display: flex;
         flex-direction: column;
-        justify-content: center; /* Aligns text with the menu button */
+        justify-content: center; 
         text-align: left;
-        flex-grow: 1; /* Allows the text to take available space */
+        flex-grow: 1; 
         padding-left: 10px; 
     }
     
@@ -184,9 +135,103 @@
 
     }
 
-   
+/*Directory*/
+
+    #cards {
+        grid-template-columns: 1fr; 
+        padding: 10px;
+    }
+
+    #cards section {
+        width: 100%; 
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    #cards section img {
+        max-width: 90px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    #business-table-container {
+        width: 95%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+        border: 2px solid #000;
+    }
+
+    #business-table-container table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    #business-table-container {
+        overflow-x: auto;
+    }
+
+    .view-toggle {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .view-toggle button {
+        padding: 5px;
+        width: 60px;
+        height: 60px;
+        border-color: black;
+    }
     
+/*Home page */
 
+.button2 {
+    background-color: #ebc069;
+    font-size: 23px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: bolder;
+}
 
+#cards {
+    grid-template-columns: 1fr; 
+    padding: 10px;
+}
 
+#cards section {
+    width: 100%; 
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#cards section img {
+    max-width: 90px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.infoDisplay {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 10px;
+  }
+  
+.infoDisplay > div {
+    background-color: #8ab17d;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box; 
+    margin-bottom: 20px;
+}
+
+h3{
+    width: 80%;
+    margin-left: 54px;
 }
