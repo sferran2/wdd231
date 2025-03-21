@@ -188,6 +188,10 @@
     
 /*Home page */
 
+    .mainContainer {
+        background-image: url('../images/heroSmall.jpg');
+    }
+
     .button2 {
         background-color: #ebc069;
         font-size: 23px;
