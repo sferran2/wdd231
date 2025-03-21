@@ -188,50 +188,51 @@
     
 /*Home page */
 
-.button2 {
-    background-color: #ebc069;
-    font-size: 23px;
-    text-decoration: none;
-    color: black;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 15px;
-    font-weight: bolder;
-}
+    .button2 {
+        background-color: #ebc069;
+        font-size: 23px;
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 15px;
+        font-weight: bolder;
+    }
 
-#cards {
-    grid-template-columns: 1fr; 
-    padding: 10px;
-}
+    #cards {
+        grid-template-columns: 1fr; 
+        padding: 10px;
+    }
 
-#cards section {
-    width: 100%; 
-    padding: 15px;
-    text-align: center;
-    border-radius: 10px;
-}
+    #cards section {
+        width: 100%; 
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+    }
 
-#cards section img {
-    max-width: 90px;
-    height: auto;
-    margin-bottom: 10px;
-}
+    #cards section img {
+        max-width: 90px;
+        height: auto;
+        margin-bottom: 10px;
+    }
 
-.infoDisplay {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-left: 10px;
-  }
-  
-.infoDisplay > div {
-    background-color: #8ab17d;
-    border-radius: 5px;
-    padding: 20px;
-    box-sizing: border-box; 
-    margin-bottom: 20px;
-}
+    .infoDisplay {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 10px;
+    }
+    
+    .infoDisplay > div {
+        background-color: #8ab17d;
+        border-radius: 5px;
+        padding: 20px;
+        box-sizing: border-box; 
+        margin-bottom: 20px;
+    }
 
-h3{
-    width: 80%;
-    margin-left: 54px;
+    h3 {
+        width: 80%;
+        margin-left: 54px;
+    }
 }
