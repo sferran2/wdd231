@@ -1,42 +1,42 @@
 /*General*/
 @media (max-width: 768px) {
     #menu {
-        display: block; 
+        display: block;
         font-size: 40px;
         background: none;
         border: none;
         color: black;
         cursor: pointer;
         align-self: center;
-        position: absolute; 
+        position: absolute;
         right: 20px;
-        top: 50%; 
-        transform: translateY(-50%); 
-        z-index: 1000; 
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1000;
     }
-    
+
     #menu::before {
-        content:"☰";
+        content: "☰";
     }
-    
+
     #menu.open::before {
         content: "✖️";
     }
 
-    .header{
+    .header {
         padding: 15px 20px;
     }
 
     .logoContainer {
         background-color: #EB7C55;
-        display: flex; 
-        align-items: center; 
+        display: flex;
+        align-items: center;
         justify-content: space-between;
-        padding: 15px 20px; 
-        gap:15px;
+        padding: 15px 20px;
+        gap: 15px;
         position: relative;
     }
-    
+
     .logo {
         width: 180px;
         margin-top: 30px;
@@ -45,19 +45,19 @@
     .chamber {
         display: flex;
         flex-direction: column;
-        justify-content: center; 
+        justify-content: center;
         text-align: left;
-        flex-grow: 1; 
-        padding-left: 10px; 
+        flex-grow: 1;
+        padding-left: 10px;
     }
-    
+
     .nav {
-        display:block;
+        display: block;
         width: 100%;
         padding: 10px;
-  
+
     }
-    
+
     #animeteme {
         max-height: 0;
         overflow: hidden;
@@ -65,24 +65,24 @@
         background-color: #2A9D8F;
         transition: 0.4s ease-out;
     }
-    
+
     #animeteme.open {
         height: auto;
         max-height: 500px;
         padding: 10px 0;
     }
-    
+
     #animeteme ul {
         list-style: none;
-        padding:20px;
+        padding: 20px;
         gap: 10px;
-        flex-direction: column; 
+        flex-direction: column;
     }
-    
+
     .nav li {
         text-align: center;
     }
-    
+
     .nav a {
         color: black;
         text-decoration: none;
@@ -93,7 +93,7 @@
     .nav-list {
         align-items: center;
     }
-    
+
     .nav a:hover {
         color: #ccc;
     }
@@ -101,33 +101,33 @@
     .footer {
         padding: 15px;
     }
-    
+
     .footer-content {
         width: 100%;
     }
-    
+
     .footer-info {
         font-size: 14px;
         font-weight: bold;
     }
-    
+
     .footer-icons {
         gap: 12px;
     }
-    
+
     .footer-icons img {
         width: 30px;
         height: 30px;
 
     }
-    
-    
+
+
     .footer-credits {
         font-size: 14px;
         font-weight: bold;
 
     }
-    
+
 
     .last-modified {
         font-size: 14px;
@@ -135,15 +135,15 @@
 
     }
 
-/*Directory*/
+    /*Directory*/
 
     #cards {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         padding: 10px;
     }
 
     #cards section {
-        width: 100%; 
+        width: 100%;
         padding: 15px;
         text-align: center;
         border-radius: 10px;
@@ -185,8 +185,8 @@
         height: 60px;
         border-color: black;
     }
-    
-/*Home page */
+
+    /*Home page */
 
     .mainContainer {
         background-image: url('../images/heroSmall.jpg');
@@ -204,12 +204,12 @@
     }
 
     #cards {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         padding: 10px;
     }
 
     #cards section {
-        width: 100%; 
+        width: 100%;
         padding: 15px;
         text-align: center;
         border-radius: 10px;
@@ -225,15 +225,23 @@
         display: grid;
         grid-template-columns: 1fr;
         margin-left: 10px;
+
     }
-    
-    .infoDisplay > div {
+
+    .infoDisplay>div {
         background-color: #8ab17d;
         border-radius: 5px;
         padding: 20px;
-        box-sizing: border-box; 
+        box-sizing: border-box;
         margin-bottom: 20px;
+
     }
+
+    .events {
+        height: 550px;
+    }
+
+
 
     h3 {
         width: 80%;
