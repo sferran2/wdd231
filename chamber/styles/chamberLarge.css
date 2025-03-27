@@ -531,74 +531,73 @@ h3 {
     width: 1800px;
     margin-left: 20px;
 
-    label {
-        display: block;
-        font-size: 20px;
-        color: black;
-        padding-top: 20px;
-        margin: .1rem 1rem 1rem 3rem;
-    }
-
-    h2 {
-        text-align: center;
-        font-size: 30px;
-    }
-
-    input[type=text],
-    input[type=tel],
-    input[type=email],
-    select {
-        display: block;
-        padding: .5rem;
-        border: 1px solid #999;
-        border-radius: 4px;
-        border-left-width: 5px;
-        border-left-color: #555;
-        font-size: 15px;
-        color: #3D405B;
-        width: 650px;
-        height: 35px;
-    }
-
-    textarea {
-        display: block;
-        padding: .5rem;
-        border: 1px solid #999;
-        border-radius: 4px;
-        border-left-width: 5px;
-        border-left-color: #555;
-        font-size: 15px;
-        color: #3D405B;
-        width: 650px;
-    }
-
-    input:required {
-        border-left-color: #d70000;
-    }
-
-    input:focus {
-        border-left-color: black;
-        outline: none;
-    }
-
-    input:required:valid {
-        border-left-color: green;
-    }
-
-    input[type=submit] {
-        border: none;
-        text-align: center;
-        background-color: #3D405B;
-        color: white;
-        border-radius: 1rem;
-        padding: .75rem 1.5rem;
-        margin: 2rem 0 2rem 32rem;
-        font-size: 1.2rem;
-        -webkit-appearance: none;
-        appearance: none;
-
-    }
+.form label {
+    display: block;
+    font-size: 20px;
+    color: black;
+    padding-top: 20px;
+    margin: .1rem 1rem 1rem 3rem;
 }
+
+form h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.form input[type=text],
+input[type=tel],
+input[type=email],
+select {
+    display: block;
+    padding: .5rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #555;
+    font-size: 15px;
+    color: #3D405B;
+    width: 650px;
+    height: 35px;
+}
+
+.form textarea {
+    display: block;
+    padding: .5rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #555;
+    font-size: 15px;
+    color: #3D405B;
+    width: 650px;
+}
+
+.form.input:required {
+    border-left-color: #d70000;
+}
+
+.form input:focus {
+     border-left-color: black;
+    outline: none;
+}
+
+.form input:required:valid {
+    border-left-color: green;
+}
+
+.form input[type=submit] {
+    border: none;
+    text-align: center;
+    background-color: #3D405B;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0 2rem 32rem;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
 
 input:-webkit-autofill {
     -webkit-text-fill-color: #3D405B;
