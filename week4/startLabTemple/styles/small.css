@@ -1,0 +1,57 @@
+*{box-sizing: border-box;}
+
+#showHere {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* space between images */
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  #showHere img {
+    width: 400px; 
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  #mydialog {
+    position: fixed;
+    transform: none;
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    z-index: 1000;
+  } 
+
+
+#mydialog div {
+    display: grid;
+    grid-template-columns: auto 44px;
+    background-color: aliceblue;
+    padding: 10px;
+    border-bottom: rgb(154, 154, 154) 1px solid;
+}
+
+#mydialog h2{
+    margin: 0;
+    color: rgb(48, 89, 91);
+}
+
+#mydialog button{
+    margin: 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px white;
+}
+
+#mydialog p{
+    padding: 10px;
+    color: black;
+}
+
+
+
+

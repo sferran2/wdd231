@@ -226,3 +226,10 @@ h1 {
     height: auto;
     margin-left: 5px;
 }
+
+#mydialog div {
+    display: grid;
+    grid-template-columns: auto 44px;
+    padding: 10px;
+    width: 300px;
+}
