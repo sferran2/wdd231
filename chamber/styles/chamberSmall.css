@@ -189,18 +189,69 @@
     /*Home page */
 
     .mainContainer {
-        background-image: url('../images/heroSmall.jpg');
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 500px;
+        text-align: center;
     }
-
+    
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        background-image: url('../images/hero.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 500px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border-radius: 12px;
+    }
+    
+    .container h2 {
+        color: black;
+        background-color: #2A9D8F;
+        padding: 20px 40px;
+        font-size: 28px;
+        border-radius: 8px;
+        max-width: 90%;
+        margin-top: 0;
+    }
+    
+    .container p {
+        color: black;
+        background-color: #EB7C55;
+        padding: 20px 40px;
+        font-size: 24px;
+        border-radius: 8px;
+        max-width: 90%;
+        margin-top: 0;
+    }
+    
     .button2 {
         background-color: #ebc069;
-        font-size: 23px;
+        font-size: 20px;
         text-decoration: none;
         color: black;
         border: 1px solid black;
-        border-radius: 10px;
-        padding: 15px;
-        font-weight: bolder;
+        border-radius: 12px;
+        padding: 15px 30px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+    
+    .button2:hover {
+        background-color: #e0a800;
+        cursor: pointer;
     }
 
     #cards {
