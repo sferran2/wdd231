@@ -5,11 +5,11 @@
 }
 
 body {
-    font-family: "Exo 2", serif;
+    font-family: "Libre Baskerville", serif;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 20px;
     text-align: center;
     background-color:#6F4029;
@@ -19,7 +19,7 @@ h1 {
 p {
     padding: 20px;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 h2 {
@@ -43,7 +43,7 @@ ol li {
     padding: 10px;
     text-align: start;
     margin-left: 90px;
-    font-size: 25px;
+    font-size: 1.5rem;
 
 }
 
