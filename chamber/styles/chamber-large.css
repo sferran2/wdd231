@@ -354,7 +354,7 @@ td a:hover {
 .button2 {
     background-color: #ebc069;
     font-size: 20px;
-    text-decoration: none;
+    text-decoration:underline;
     color: black;
     border: 1px solid black;
     border-radius: 12px;
