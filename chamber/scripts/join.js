@@ -92,8 +92,8 @@ document.addEventListener("DOMContentLoaded", function () {
         closeBtn?.addEventListener('click', () => dialog.close());
     }
 
-    // Display form results only on thanks.html
-    if (window.location.pathname.includes("thanks.html")) {
+    // Display form results only on thankyou.html
+    if (window.location.pathname.includes("thankyou.html")) {
         const myInfo = new URLSearchParams(window.location.search);
         const results = document.querySelector('#results');
         if (results) {

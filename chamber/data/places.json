@@ -1,0 +1,52 @@
+{
+    "places": [
+      {
+        "name": "Parque Nacional del Chicamocha",
+        "image": "images/parque_chicamocha.webp",
+        "description": "The Chicamocha National Park is a true tourist attraction, where you can find adventure sports, recreational tourism, ecotourism, local cuisine, and the rich culture, roots, and history of Santander—all in one place.",
+        "address": "Aratoca, Km. 54 Via Bucaramanga - San Gil"
+      },
+      {
+        "name": "Cerro del Santisimo",
+        "image": "images/santisimo.webp",
+        "address": "Hacienda La Esperanza | Antigua cervecería Clausen, Km 1, Floridablanca",
+        "description": "Cerro del Santísimo Park is a place surrounded by nature, with its main attraction being El Santísimo—a 37-meter-tall artistic sculpture where you can enjoy the most stunning sunsets in the city."
+      },
+      {
+        "name": "Quebrada Las Gachas",
+        "image": "images/quebrada_gachas.webp",
+        "address": "Municipio de Guadalupe, Santander",
+        "description": "Las Gachas is a stream that features a series of natural pools of various diameters and depths, making it a unique attraction—and much more fun than the traditional river outing."
+      },
+      {
+        "name": "Catedral La Sagrada Familia",
+        "image": "images/catedral_sagrada_familia.webp",
+        "address": "Cl 36 #19-56 Bucaramanga",
+        "description": "The Metropolitan Cathedral of the Holy Family in Bucaramanga, Santander, Colombia, is an important religious temple with a history dating back to 1895. It was declared the Cathedral of the Diocese in 1952."
+      },
+      {
+        "name": "Barichara",
+        "image": "images/Barichara.webp",
+        "address": "Barichara-Santander",
+        "description": "Barichara is a town in northern Colombia known for its cobbled streets and colonial architecture. In the center, the sandstone Catedral de la Inmaculada Concepción features a gold-leaf altar. Other significant churches include whitewashed Capilla de San Antonio, built in the 19th century, and hilltop Capilla de Santa Barbara. On the town’s western outskirts, Cementerio Barichara is a cemetery with ornate tombs."
+      },
+      {
+        "name": "Mirador Salto del Mico",
+        "image": "images/salto_mico.webp",
+        "address": "Barichara-Santander",
+        "description": "El Salto del Mico is one of the most important and spectacular viewpoints found in Santander . It is formed by a set of rocks that will allow you to appreciate a unique view of the beautiful landscapes of Santander ."
+      },
+      {
+        "name": "Canon del Chicamocha",
+        "image": "images/canon_chiacamocha.webp",
+        "address": "54 kilómetros de Bucaramanga, capital del departamento de Santander, entre Aratoca y Piedecuesta",
+        "description": "The Chicamocha Canyon is a steep sided canyon carved by the Chicamocha River in Colombia. With a maximum depth of 2,000 metres, an area of 108,000 hectares and a length of 227 kilometres, the canyon is the second-largest worldwide."
+      },
+      {
+        "name": "Cafe Mesa de los Santos",
+        "image": "images/cafe_mesa_santos.webp",
+        "address": "El Granero. Km 6 después del Peaje. Hacienda El Roble ",
+        "description": "Café Mesa de los Santos is a premium, organic, Colombian coffee, known for its rich, balanced flavor, and sustainable practices, often described as having a smooth, clean finish with notes of chocolate, nuts, and citrus."
+      }
+    ]  
+}

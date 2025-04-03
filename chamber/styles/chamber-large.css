@@ -111,6 +111,10 @@ body.dark-mode a {
     color: white;
 }
 
+body.dark-mode .cards-grid h2 {
+    color: black;
+}
+
 
 .footer {
     background-color: #EB7C55;
@@ -323,6 +327,7 @@ td a:hover {
     align-items: center;
     justify-content: center;
 }
+
 .content-box {
     display: flex;
     flex-direction: column;
@@ -354,7 +359,7 @@ td a:hover {
 .button2 {
     background-color: #ebc069;
     font-size: 20px;
-    text-decoration:underline;
+    text-decoration: underline;
     color: black;
     border: 1px solid black;
     border-radius: 12px;
@@ -618,7 +623,7 @@ select {
 }
 
 .form input:focus {
-     border-left-color: black;
+    border-left-color: black;
     outline: none;
 }
 
@@ -744,6 +749,7 @@ dialog::backdrop {
     color: #333;
     line-height: 1.6;
     width: 900px;
+    text-align: center;
 }
 
 #results h3 {
@@ -765,4 +771,90 @@ dialog::backdrop {
 #results em {
     color: #555;
     font-style: italic;
+}
+
+/* discover*/
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1025px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cards-grid section {
+    background-color: #f9f9f9;
+    border: 5px solid #e76f51;
+    border-radius: 12px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+
+    display: grid;
+    grid-template-areas:
+        "name"
+        "image"
+        "description"
+        "address"
+        "button"
+    ;
+}
+
+.cards-grid section>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.cards-grid section:hover {
+    transform: scale(1.01);
+}
+
+.cards-grid img {
+    border-radius: 8px;
+    width: 100%;
+    grid-area: image;
+}
+
+.cards-grid h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 10px;
+    grid-area: name;
+}
+
+.cards-grid address {
+    font-style: italic;
+    margin-top: 0.5rem;
+    color: #333;
+    grid-area: address;
+}
+
+.cards-grid p {
+    line-height: 1.4;
+    color: #444;
+    grid-area: description;
+}
+
+
+.cards-grid button {
+    align-self: center;
+    margin-top: 1rem;
+    padding: 0.6rem 10.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    background-color: #2a9d8f;
+    color:black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    grid-area: button;
+}
+
+.cards-grid button:hover {
+    background-color: #8AB17D;
 }

@@ -6,19 +6,19 @@
         <meta name="description" content="Explore and connect with local businesses, services, and professionals through our Chamber of Commerce Directory.">
         <meta name="author" content="Silvia Ferran">
 
-        <meta property="og:title" content="Chamber of Commerce : Home Page">
+        <meta property="og:title" content="Chamber of Commerce : Discover Page">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://sferran2.github.io/wdd231/chamber/images/thumbail.png">
-        <meta property="og:url" content="https://sferran2.github.io/wdd231/chamber/directory.html">
+        <meta property="og:url" content="https://sferran2.github.io/wdd231/chamber/discover.html">
         <meta property="og:description" content="Find local businesses and professional services in our Chamber of Commerce Directory.">
 
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Santander, Colombia - Chamber of Commerce Home Page">
+        <meta name="twitter:title" content="Santander, Colombia - Chamber of Commerce Discover Page">
         <meta name="twitter:description" content="Explore and connect with local businesses and services in Santander, Colombia.">
         <meta name="twitter:image" content="https://sferran2.github.io/wdd231/chamber/images/thumbail.png">
-        <meta name="twitter:url" content="https://sferran2.github.io/wdd231/chamber/directory.html">
+        <meta name="twitter:url" content="https://sferran2.github.io/wdd231/chamber/discover.html">
 
-        <title>WDD 231 - Santander, Colombia Chamber of Commerce: Directory - Silvia Ferran</title>
+        <title>WDD 231 - Santander, Colombia Chamber of Commerce: Discover - Silvia Ferran</title>
         <link rel="preload" href="styles/normalize.css" as="style">
         <link rel="preload" href="styles/chamber-large.css" as="style">
         <link rel="preload" href="styles/chamber-medium.css" as="style">
@@ -27,7 +27,7 @@
         <link rel="stylesheet" href="styles/chamber-large.css">
         <link rel="stylesheet" href="styles/chamber-medium.css">
         <link rel="stylesheet" href="styles/chamber-small.css" media="(max-width: 768px)">
-        <script src="scripts/homepage.js" defer></script>
+        <script src="scripts/discover.js" defer></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +37,7 @@
     <body>
         <header>
             <div class="logoContainer">
-                <img src="images/logo.webp" alt="cc-logo" class="logo" width="150" height="150">
+                <img src="images/logo.webp" alt="cc-logo" class="logo">
                 <div class="chamber">
                     <span>Santander</span>
                     <span class="type"> Chamber of Commerce</span>
@@ -46,10 +46,10 @@
                     <section class="nav">
                         <nav id="animeteme">
                             <ul class="nav-list" id="nav-list">
-                                <li><a href="#" class="active" aria-label="Go to Home">Home</a></li>
+                                <li><a href="index.html" aria-label="Go to Home">Home</a></li>
                                 <li><a href="directory.html" aria-label="Bussines Directory">Directory</a></li>
                                 <li><a href="join.html" aria-label="Join">Join</a></li>
-                                <li><a href="discover.html" aria-label="Discover">Discover</a></li>
+                                <li><a href="#" class="active"  aria-label="Discover">Discover</a></li>
                                 <li>
                                     <button id="dark-mode-toggle" aria-label="Toggle dark mode">
                                         <img src="images/darkmode.svg" alt="Dark Mode Toggle" width="24">
@@ -61,43 +61,8 @@
             </div>
         </header>
         <main>
-            <section class="mainContainer">
-                <div class="container">
-                    <div class="content-box">
-                        <h2>Be part of our growing community!</h2>
-                        <p>Sign up for membership and start connecting</p>
-                        <a href="join.html" class="button2" >Join Us Today</a>
-                    </div> 
-                </div>
-            </section>
-            <h1> Welcome to the Santander Chamber of Commerce! </h1>
-            <section class="infoDisplay">
-                <div class="events">
-                    <h2>Mark Your Calendar</h2>
-                    <div id="cardsEventsContainer"></div>
-                </div>
-                <div class="cardWeather">
-                    <h2>Current Weather</h2>
-                    <img id="graphic" src="#" alt="#">
-                    <p id="description"></p>
-                    <p id="temperatureHigh"></p>
-                    <p id="temperatureLow"></p>
-                    <p id="humidity"></p>
-                    <p id="sunrise"></p>
-                    <p id="sunset"></p>
-                </div>
-                <div class="forecast">
-                    <h2>Weather Forecast</h2>
-                    <p id="day1"></p>
-                    <p id="day2"></p>
-                    <p id="day3"></p>
-                    <p id="day4"></p>
-                </div>
-            </section>
-            <h3>Highlighting Excellence in Our Local Economy</h3>
-            <section class="directory">
-                <div id="cards"></div>
-            </section>
+            <section id="interestCards" class="cards-grid"></section>
+            
         </main>
         <footer class="footer">
             <section class="footer-content">
