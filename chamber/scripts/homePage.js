@@ -27,6 +27,33 @@ document.addEventListener("DOMContentLoaded", function () {
         menuButton.classList.toggle('open');
     });
 
+    const lastVisitDate = localStorage.getItem("lastVisit");
+    const currentVisitDate = Date.now();
+
+    if (!lastVisitDate) {
+        displayVisitMessage("Welcome!");
+    } else {
+        const timeDiff = currentVisitDate - parseInt(lastVisitDate);
+        const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+
+        if (daysDiff < 1) {
+            displayVisitMessage("Back so soon! Awesome.");
+        } else {
+            const dayOrDays = daysDiff === 1 ? "day" : "days";
+            displayVisitMessage(`You last visited ${daysDiff} ${dayOrDays} ago`);
+        }
+    }
+
+    localStorage.setItem("lastVisit", currentVisitDate);
+
+    function displayVisitMessage(message) {
+        const visitMessageContainer = document.createElement("div");
+        visitMessageContainer.textContent = message;
+        visitMessageContainer.classList.add("visit-message");
+        visitMessageContainer.setAttribute('aria-live', 'polite');
+        document.getElementById("visit-message-container").appendChild(visitMessageContainer);
+    }
+
     // BUSINESS CARDS
     const url = 'data/members.json';
     const cardsContainer = document.querySelector("#cards");

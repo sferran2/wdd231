@@ -26,6 +26,33 @@ document.addEventListener("DOMContentLoaded", function () {
         menuButton.classList.toggle('open'); 
     });
 
+    const lastVisitDate = localStorage.getItem("lastVisit");
+    const currentVisitDate = Date.now();
+
+    if (!lastVisitDate) {
+        displayVisitMessage("Welcome!");
+    } else {
+        const timeDiff = currentVisitDate - parseInt(lastVisitDate);
+        const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+
+        if (daysDiff < 1) {
+            displayVisitMessage("Back so soon! Awesome.");
+        } else {
+            const dayOrDays = daysDiff === 1 ? "day" : "days";
+            displayVisitMessage(`You last visited ${daysDiff} ${dayOrDays} ago`);
+        }
+    }
+
+    localStorage.setItem("lastVisit", currentVisitDate);
+
+    function displayVisitMessage(message) {
+        const visitMessageContainer = document.createElement("div");
+        visitMessageContainer.textContent = message;
+        visitMessageContainer.classList.add("visit-message");
+        visitMessageContainer.setAttribute('aria-live', 'polite');
+        document.getElementById("visit-message-container").appendChild(visitMessageContainer);
+    }
+
     //Discover Page Cards
     const url = 'data/places.json';
     const cardsContainer = document.querySelector("#interestCards");
@@ -78,43 +105,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     fetchplacesData();
 
-    // Last Visit Logic
-    const lastVisitDate = localStorage.getItem("lastVisit");
-    const currentVisitDate = Date.now(); // Renamed to currentVisitDate
-
-    if (!lastVisitDate) {
-        // First visit
-        displayVisitMessage("Welcome! Let us know if you have any questions.");
-    } else {
-        const timeDiff = currentVisitDate - parseInt(lastVisitDate);
-        const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-
-        if (daysDiff < 1) {
-            displayVisitMessage("Back so soon! Awesome!");
-        } else {
-            const dayOrDays = daysDiff === 1 ? "day" : "days";
-            displayVisitMessage(`You last visited ${daysDiff} ${dayOrDays} ago.`);
-        }
-    }
-
-    localStorage.setItem("lastVisit", currentVisitDate); // Renamed to currentVisitDate
-
-    // Function to display the visit message (You can customize this)
-    function displayVisitMessage(message) {
-        const visitMessageContainer = document.createElement("div");
-        visitMessageContainer.textContent = message;
-        visitMessageContainer.style.backgroundColor = "#EFB366";
-        visitMessageContainer.style.padding = "15px";
-        visitMessageContainer.style.fontSize = "25px";
-        visitMessageContainer.style.textAlign = "center";
-        visitMessageContainer.style.marginTop = "20px";
-        visitMessageContainer.style.marginLeft = "180px";
-        visitMessageContainer.style.marginRight = "185px";
-        visitMessageContainer.style.borderRadius = "5px";
-
-        // Add the message to the top of the main container
-        document.querySelector("main").prepend(visitMessageContainer);
-    }
 });
 
 

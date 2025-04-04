@@ -115,6 +115,20 @@ body.dark-mode .cards-grid h2 {
     color: black;
 }
 
+.visit-message {
+    padding: 8px 12px; 
+    font-size: 18px;
+    font-weight: bold; 
+    text-align: center;
+    background-color: #ECBC68;
+    border-radius: 5px; 
+    display: inline-block;
+    margin-bottom: 80px;
+}
+#visit-message-container{
+     list-style: none; 
+}
+
 
 .footer {
     background-color: #EB7C55;
@@ -858,3 +872,13 @@ dialog::backdrop {
 .cards-grid button:hover {
     background-color: #8AB17D;
 }
+
+.invitation{
+    padding: 20px;
+}
+
+.invitation p{
+    font-size: 20px;
+    text-align: center;
+}
+

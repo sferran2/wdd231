@@ -12,6 +12,33 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("darkMode", body.classList.contains("dark-mode") ? "enabled" : "disabled");
     });
 
+    const lastVisitDate = localStorage.getItem("lastVisit");
+    const currentVisitDate = Date.now();
+
+    if (!lastVisitDate) {
+        displayVisitMessage("Welcome!");
+    } else {
+        const timeDiff = currentVisitDate - parseInt(lastVisitDate);
+        const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+
+        if (daysDiff < 1) {
+            displayVisitMessage("Back so soon! Awesome.");
+        } else {
+            const dayOrDays = daysDiff === 1 ? "day" : "days";
+            displayVisitMessage(`You last visited ${daysDiff} ${dayOrDays} ago`);
+        }
+    }
+
+    localStorage.setItem("lastVisit", currentVisitDate);
+
+    function displayVisitMessage(message) {
+        const visitMessageContainer = document.createElement("div");
+        visitMessageContainer.textContent = message;
+        visitMessageContainer.classList.add("visit-message");
+        visitMessageContainer.setAttribute('aria-live', 'polite');
+        document.getElementById("visit-message-container").appendChild(visitMessageContainer);
+    }
+
     // Footer
     const currentYear = new Date().getFullYear();
     const yearSpan = document.getElementById('current-year');
