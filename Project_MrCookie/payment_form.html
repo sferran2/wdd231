@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Secure payment form to complete your transaction quickly and safely.">
+        <meta name="author" content="Silvia Ferran">
+        <title> WDD 131 - Form - Silvia Ferran </title>
+        <link rel="stylesheet" href="styles/form-large.css">
+        <link rel="stylesheet" href="styles/form.css" media="(max-width: 768px)">
+        <script src="scripts/form.js" defer></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div class="logo-container1">
+                <img src="images/logo_form.webp" alt=" Company Logo" class="logo1">
+                <h1>Secure Checkout</h1>
+            </div>
+            <form method="get" action="review.html" class="fpr1">
+                <fieldset>
+                    <legend>Step 1: Your Information</legend>
+                    <label>First Name* <input type="text" name="fname" required></label>
+                    <label>Last Name* <input type="text" name="lname" required></label>
+                    <label>Phone Number <input type="tel" name="phone" placeholder="1235551234"></label>
+                    <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Step 2: Delivery Address</legend>
+                    <label>Address* <input type="text" name="address" required></label>
+                    <label>Zip Code*<input type="number" name="zip_code" placeholder="12345-6789"></label>
+                    <label>Country*</label>
+                    <select id="country" name="country">
+                        <option value="">--Please Select--- &#9662;</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Step 3: Card details</legend>
+                    <label>Card Type</label>
+                    <div class="bfr1">
+                        <label>
+                            <input type="radio" name="cardtype" value="visa" class="">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa"> 
+                        </label> 
+                        <label>
+                            <input type="radio" name="cardtype" value="amex"> 
+                            <img src="images/amex_logo.png" alt="American Express"> 
+                        </label>
+                        <label>
+                            <input type="radio" name="cardtype" value="mastercard"> 
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg" alt="MasterCard"> 
+                        </label> 
+                        <label>
+                            <input type="radio" name="cardtype" value="paypal">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal"> 
+                        </label>
+                    </div>
+                    <label>Card Number <input type="number" name="cardnumber"></label>
+                    <label>Security Code <input type="number" name="securitycode" required></label>
+                    <label>Name on Card<input type="text" name="name" placeholder="Enter name as on the card"></label> 
+                </fieldset>
+                <input type="submit" value="Get my order now!">
+            </form>
+        </main>
+        <footer class="foot">
+            <p>
+                ©<span id="current-year">🏫</span> Silvia Ferran <span>🏫</span> Colombia
+            </p>
+            <p class="last-modified"></p>
+        </footer>
+    </body>
+</html>
+
