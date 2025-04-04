@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("visit-message-container").appendChild(visitMessageContainer);
     }
 
-    // BUSINESS CARDS
+    // bussiness cards
     const url = 'data/members.json';
     const cardsContainer = document.querySelector("#cards");
     let allBusinesses = [];
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     fetchBusinessData();
 
-    // EVENTS CARDS
+    // event cards
     const url1 = "data/events.json";
     const cardsEventsContainer = document.querySelector("#cardsEventsContainer");
     let allEvents = [];
@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     fetchEventsData();
 
-    // WEATHER (Current and Forecast)
+    // weather (Current and Forecast)
     const myDescription = document.querySelector('#description');
     const myTemperatureHigh = document.querySelector('#temperatureHigh');
     const myTemperatureLow = document.querySelector('#temperatureLow');
