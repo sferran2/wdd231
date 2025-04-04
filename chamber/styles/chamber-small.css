@@ -1,5 +1,5 @@
 /*general*/
-@media (min-width: 320),(max-width: 640px) {
+@media (min-width: 320) and (max-width: 640px) {
     #menu {
         display: block;
         font-size: 40px;
