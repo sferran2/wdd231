@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentVisitDate = Date.now();
 
     if (!lastVisitDate) {
-        displayVisitMessage("Welcome!");
+        displayVisitMessage("Welcome! Let us know if you have any questions");
     } else {
         const timeDiff = currentVisitDate - parseInt(lastVisitDate);
         const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
