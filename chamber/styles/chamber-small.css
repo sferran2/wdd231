@@ -1,5 +1,5 @@
 /*general*/
-@media (max-width: 768px) {
+@media (min-width: 320),(max-width: 640px) {
     #menu {
         display: block;
         font-size: 40px;
@@ -218,8 +218,7 @@
     }
     
     .container h2 {
-        color: black;
-        background-color: #2A9D8F;
+        color: white;
         padding: 20px 40px;
         font-size: 28px;
         border-radius: 8px;
@@ -228,8 +227,7 @@
     }
     
     .container p {
-        color: black;
-        background-color: #EB7C55;
+        color: white;
         padding: 20px 40px;
         font-size: 24px;
         border-radius: 8px;

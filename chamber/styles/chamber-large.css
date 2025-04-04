@@ -351,22 +351,20 @@ td a:hover {
 }
 
 .container h2 {
-    color: black;
-    background-color: #2A9D8F;
-    padding: 20px 40px;
+    color: white;
+    padding: 5px 90px;
     font-size: 28px;
     border-radius: 8px;
-    max-width: 90%;
-    margin-top: 0;
+    max-width: 100%;
+    margin-top: 150px;
 }
 
 .container p {
-    color: black;
-    background-color: #EB7C55;
-    padding: 20px 40px;
+    color: white;
+    padding: 5px 290px;
     font-size: 24px;
     border-radius: 8px;
-    max-width: 90%;
+    max-width: 100%;
     margin-top: 0;
 }
 
