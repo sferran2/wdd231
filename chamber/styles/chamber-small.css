@@ -334,6 +334,10 @@
         width: 100%;
     }
 
+    .membership-box h3{
+        font-size: 20px;
+    }
+
     .membership-box button {
         position: static;
         margin-top: 15px;
