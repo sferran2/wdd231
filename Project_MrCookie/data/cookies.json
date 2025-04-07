@@ -1,0 +1,106 @@
+{
+  "cookies": [
+    {
+      "id": 1,
+      "name": "Mr. Choc",
+      "description": "Chocolate chip cookie.",
+      "extra_description": "This cookie is a classic favorite, packed with rich semi-sweet chocolate chips in every bite. Perfectly golden on the outside and soft in the center. Mr. Choc is the comfort cookie that never fails. Simple, nostalgic, and always satisfying.",
+      "price_large": 3,
+      "price_mini": 1.50,
+      "image": "images/mrchoco.webp",
+      "featured_invite": "Meet Mr. Choc, our all-time classic with gooey chocolate chips in every bite. Simple, rich, and perfectly baked for cookie lovers. He is timeless, irresistible, and waiting for you. Grab yours while he's the star of the week!"
+    },
+    {
+      "id": 2,
+      "name": "Mr. Coconut",
+      "description": "Chocolate chip cookie with shredded coconut.",
+      "extra_description": "A tropical twist on our classic cookie. Mr. Coconut brings the chewy goodness of chocolate chips blended with sweet, toasted coconut flakes. It is soft, slightly crisp, and full of sunshine in every bite. Great for coconut lovers or cookie adventurers!",
+      "price_large": 3,
+      "price_mini": 1.50,
+      "image": "images/mrcoconut.webp",
+      "featured_invite": "Take a tropical break with Mr. Coconut. His chocolate chips and coconut flakes will transport your senses. Light, chewy, and oh-so-satisfying. Do not miss this week sweet escape!"
+    },
+    {
+      "id": 3,
+      "name": "Miss Valentine",
+      "description": "Red velvet cookie with white chocolate chunks and cream cheese filling.",
+      "extra_description": "Miss Valentine is a showstopper with her vibrant red velvet dough, creamy heart, and white chocolate love. She is soft, rich, and totally swoon-worthy. Every bite feels like a hug. Whether it is Valentine’s Day or not, this cookie is a celebration of love.",
+      "featured_invite": "This week, fall in love with Miss Valentine.\n  Whether you're celebrating or just treating yourself... she's the perfect pick.\n Come grab yours before she’s gone!",
+      "price_large": 3.50,
+      "price_mini": 2,
+      "image": "images/mrvalentine.webp"
+    },
+    {
+      "id": 4,
+      "name": "Miss Sweety",
+      "description": "Sugar cookie with buttercream frosting.",
+      "extra_description": "Miss Sweety is all things soft, sweet, and sprinkled with joy. A buttery sugar cookie topped with a swirl of rich, creamy frosting. It’s cheerful, colorful, and melts in your mouth. Perfect for parties, picnics, or any time you need a little sugar magic.",
+      "price_large": 3,
+      "price_mini": 1.50,
+      "image": "images/swety.webp",
+      "featured_invite": "Say hello to Miss Sweety — a sugar cookie dream with a swirl of buttercream frosting. She’s soft, sweet, and full of sunshine. Perfect for teatime, me-time, or anytime. Try her this week only!"
+    },
+    {
+      "id": 5,
+      "name": "Mr. Brown",
+      "description": "Chocolate cookie with dark chocolate chunks and chocolate chips.",
+      "extra_description": "Deep, dark, and dangerously delicious. Mr. Brown is for true chocolate lovers—intensely rich cocoa dough loaded with dark chocolate chunks. Fudgy in the middle with a slight crisp on the edges. Every bite is bold and beautiful.",
+      "price_large": 3,
+      "price_mini": 1.50,
+      "image": "images/mrbrown.webp",
+      "featured_invite": "Dive deep into rich chocolate with Mr. Brown. He's bold, intense, and full of cocoa charm. For dark chocolate lovers, he's a dream come true. Don’t miss this decadent weekly favorite!"
+    },
+    {
+      "id": 6,
+      "name": "Miss Caramelo",
+      "description": "Vanilla cookie filled with caramel and white chocolate chunks.",
+      "extra_description": "Miss Caramelo is a sweet surprise with a soft vanilla cookie shell hiding a gooey caramel center. Each bite is buttery, golden, and deliciously smooth. White chocolate chunks add a creamy touch. She's warm, comforting, and oh-so-lovable.",
+      "price_large": 3.50,
+      "price_mini": 2,
+      "image": "images/mrcaramelo.webp",
+      "featured_invite": "Melt into the sweet embrace of Miss Caramelo. Her golden vanilla cookie hides a caramel surprise that’s smooth and creamy. Every bite is pure delight. Come taste the magic this week!"
+    },
+    {
+      "id": 7,
+      "name": "Mr. Crunch",
+      "description": "Chocolate chip cookie with almond pieces.",
+      "extra_description": "A nutty twist on a classic favorite. Mr. Crunch combines the sweetness of chocolate chips with the crunch of roasted almonds. It’s hearty, satisfying, and perfect for cookie fans who love a little texture. One bite and you’ll be hooked!",
+      "price_large": 3,
+      "price_mini": 1.50,
+      "image": "images/mrcrunch.webp",
+      "featured_invite": "Craving a little crunch? Mr. Crunch brings the perfect mix of soft cookie and roasted almonds. He’s hearty, nutty, and totally satisfying. Treat yourself this week to something extra special!"
+    },
+    {
+      "id": 8,
+      "name": "Miss Orangy",
+      "description": "Orange-flavored cookie with sugar glaze.",
+      "extra_description": "Bright, zesty, and full of flair. Miss Orangy is a soft citrus cookie topped with a sweet sugar glaze. Every bite brings a fresh pop of orange that feels like sunshine. She’s the cookie to brighten your day!",
+      "price_large": 3,
+      "price_mini": 1.50,
+      "image": "images/mrorangy.webp",
+      "featured_invite": "Brighten your week with Miss Orangy. Her citrusy zing and sugar glaze are like sunshine in a cookie. Sweet, tangy, and oh-so-refreshing. Take a bite and feel the joy!"
+    },
+    {
+      "id": 9,
+      "name": "Mr. Oreo",
+      "description": "Chocolate cookie with Oreo chunks, white and dark chocolate chips.",
+      "extra_description": "Mr. Oreo is the cookie inside a cookie. Rich chocolate dough filled with chunks of real Oreo cookies, plus white and dark chocolate chips. It’s the best of all worlds—creamy, crunchy, and chewy. A must-try for cookie lovers who want it all.",
+      "price_large": 3,
+      "price_mini": 1.50,
+      "image": "images/mroreos.webp",
+      "featured_invite": "Cookies inside a cookie? Yes, please! Mr. Oreo is stuffed with chunks of your favorite sandwich cookie plus white and dark chocolate chips. He’s crunchy, chewy, and unforgettable. Don’t miss this double delight!"
+    },
+    {
+      "id": 10,
+      "name": "Mr. Peanut",
+      "description": "Peanut butter cookie with a Hershey's chocolate square on top.",
+      "extra_description": "Mr. Peanut is bold, nutty, and topped with a smooth square of milk chocolate. The peanut butter cookie base is soft and flavorful, perfect for snack lovers. It’s a delicious combo of sweet and salty in every bite. A classic treat with a chocolatey twist!",
+      "featured_invite": "Say hello to Mr. Peanut — a nutty delight that’s impossible to resist. With a melt-in-your-mouth chocolate center and soft peanut butter base, he’s a crowd-pleaser. Every bite is packed with bold flavor and cozy comfort. Don’t miss your chance to try this week's superstar!",
+      "price_large": 3,
+      "price_mini": 1.50,
+      "image": "images/mrpeanut.webp"
+
+    }
+  ]
+}
+

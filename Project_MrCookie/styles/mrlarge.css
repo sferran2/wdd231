@@ -153,6 +153,7 @@ body.dark-mode .cards-grid h2 {
     text-align: left;
     font-size: 18px;
     color: #270503;
+    font-weight: bold;
 }
 
 .footer-info p {
@@ -186,6 +187,8 @@ footer.footer {
 }
 
 /*home page*/
+
+/*rotation*/
 
 .hero {
     position: relative;
@@ -239,3 +242,108 @@ footer.footer {
   .hero-btn:hover {
     background-color: #c9560f;
   }
+
+  /*feature cookie*/
+
+  .product-week-section {
+    display: grid;
+    grid-template-columns: 400px 600px;
+    grid-template-rows: auto auto auto auto;
+    column-gap: 9rem;
+    max-width: 95%;
+    margin: 6rem auto;
+    padding: 2rem;
+    background-color: #DDC7B4;
+    border-radius: 10px;
+    grid-template-areas: 
+      "image ft_invite"
+      "image ex_description"
+      "image button"
+      "image .";
+  }
+  
+  .product-week-section img {
+    grid-area: image;
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-left: 30px;
+  }
+  
+  .product-week-section h3 {
+    grid-area: ft_invite;
+    color: #F6571A;
+    font-size: 2.0rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .product-week-section p {
+    grid-area: ex_description;
+    color: #444;
+    margin-top: .5rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .product-week-section button {
+    grid-area: button;
+    background-color: #5C2618;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  
+  .product-week-section button:hover {
+    background-color: #c9560f;
+  }
+
+  /*reviews*/
+  
+  .review-section {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: #c9560f;
+    max-width: 95%;
+    margin: 6rem auto;
+  }
+  
+  .review-card {
+    background-color: #FFF4E0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 400px;
+  }
+  
+  .review-card h4 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .review-card .date {
+    color:#5C2618;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .review-card .stars {
+    color: #F6571A;
+    font-size: 1.1rem;
+  }
+  
+  .review-card p {
+    margin-top: 0.75rem;
+    color: #444;
+    font-size: 1rem;
+  }
+    
+  
+  
