@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mr. Cookie is a family-owned business serving fresh, homemade cookies baked with love and the finest ingredients.">
+    <meta name="author" content="Silvia Ferran">
+
+    <meta property="og:title" content="Mr Cookie Homebaked">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sferran2.github.io/wdd231/Project_MrCookie/images/thumbail.png">
+    <meta property="og:url" content="https://sferran2.github.io/wdd231/Project_MrCookie/index.html">
+    <meta property="og:description"
+        content="Mr. Cookie is a family-owned business serving fresh, homemade cookies baked with love and the finest ingredients.">
+
+    <title>WDD 231 - Mr Cookie Homebaked</title>
+    <link rel="preload" href="styles/normalize.css" as="style">
+    <link rel="preload" href="styles/mrlarge.css" as="style">
+    <link rel="preload" href="styles/mrmedium.css" as="style">
+    <link rel="preload" href="styles/mrsmall.css" as="style">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/mrlarge.css">
+    <link rel="stylesheet" href="styles/mrmedium.css">
+    <link rel="stylesheet" href="styles/mrmedium.css" media="(max-width: 640px)">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/about.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logoContainer">
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="cc-logo" class="logo" width="150" height="150">
+            </a>
+            <div class="mrname">
+                <span>Mr Cookie</span>
+                <span class="type">Homebaked</span>
+                <button type="button" id="menu" aria-label="Toggle menu"></button>
+            </div>
+            <section class="nav">
+                <nav id="animeteme">
+                    <ul class="nav-list" id="nav-list">
+                        <li><a href="index.html" aria-label="Go to Home">Home</a></li>
+                        <li><a href="order.html" aria-label="Order">Order</a></li>
+                        <li><a class="active" aria-label="About Us">About Us</a></li>
+                        <li>
+                            <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+                                <img src="images/darkmode.svg" alt="Dark Mode Toggle" width="24">
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </header>
+    <main>
+        <div class="fuscos">
+        <h1> We are the Fuscos!</h1>
+        </div>
+
+        <section id="heroFlipGrid" class="hero-flip-grid"></section>
+
+        <section class="feature-card_a">
+            <div class="portrait_a">
+                <img src="images/pai.webp" alt="Pai" width="150" height="150" loading="lazy">
+            </div>
+            <div class="text_a">
+                <h2>Pai</h2>
+                <p>Pai is the steady foundation of our family and the heart behind the dream of Mr. Cookie becoming a
+                    reality. Originally from Brazil, he brings a lot of love, laughter, and flavor into everything we
+                    do. He works incredibly hard—behind the scenes and beyond—to support every part of our project, from
+                    planning and logistics to cheering us on through every sale. Pai believes deeply in teaching by
+                    example, and his dedication shows our kids the value of commitment and perseverance. Without him,
+                    Mr. Cookie wouldn't be more than a sweet idea—we're so grateful he's our biggest helper and
+                    believer.</p>
+            </div>
+        </section>
+        <section class="feature-card_b">
+            <div class="portrait_b">
+                <img src="images/kane.webp" alt="mom" width="150" height="150" loading="lazy">
+            </div>
+            <div class="text_b">
+                <h2>Mom: Kane</h2>
+                <p>Hi friends! I'm Daniela, the proud mom behind Mr. Cookie. Baking has always been one of my greatest
+                    joys, especially when I get to share it with my family. I’ve loved seeing how my children have
+                    inherited this passion and how we’ve grown together through this little business. I usually take the
+                    lead in baking (and yes, I happily work for kisses!), but I’m really just part of a beautiful team.
+                    More than anything, I want my kids to know that with love, effort, and teamwork, we can build
+                    something truly special.</p>
+            </div>
+        </section>
+        <section class="feature-card_a">
+            <div class="portrait_a">
+                <img src="images/keto.webp" alt="keto" width="150" height="150" loading="lazy">
+            </div>
+            <div class="text_a">
+                <h2>Keto</h2>
+                <p>Keto is our amazing swimmer—fast, focused, and always up for a challenge. Outside the water, he’s 
+                    just as dedicated in the kitchen, where he helps measure, mix, and of course, taste-test our cookies.
+                    He has a great eye for details and often spots ways we can improve our process. Keto loves working side 
+                    by side with his siblings and brings a lot of fun and energy to our team. He’s proof that discipline and
+                    sweetness can go hand in hand!</p>
+            </div>
+        </section>
+        <section class="feature-card_b">
+            <div class="portrait_b">
+                <img src="images/dodo.webp" alt="dodo" width="150" height="150" loading="lazy">
+            </div>
+            <div class="text_b">
+                <h2>Dodo</h2>
+                <p>Dodo is a bright and creative soul who sees the world in such a unique way. Being neurodiverse is one of 
+                    his superpowers—it helps him notice things others might miss. He’s deeply involved in packing the cookies 
+                    and always makes sure everything looks just right. Dodo brings joy and warmth to our kitchen, and his 
+                    smile lights up every market we attend. We love how he reminds us that everyone has something important 
+                    to contribute.</p>
+            </div>
+        </section>
+        <section class="feature-card_a">
+            <div class="portrait_a">
+                <img src="images/totti.webp" alt="totti" width="150" height="150" loading="lazy">
+            </div>
+            <div class="text_a">
+                <h2>Totti</h2>
+                <p>Totti is our little Ju Jitsu champ—strong, focused, and full of determination. He approaches cookie-making 
+                    with the same passion he brings to the mat. Totti is always ready to help, whether it’s rolling dough or 
+                    carefully placing cookies into their packages. He’s also one of our top salespeople and never shies away 
+                    from sharing our treats with others. His courage and dedication inspire us every day.</p>
+            </div>
+        </section>
+        <section class="feature-card_b">
+            <div class="portrait_b">
+                <img src="images/cece.webp" alt="mom" width="150" height="150" loading="lazy">
+            </div>
+            <div class="text_b">
+                <h2>Cece</h2>
+                <p>Cece is the heart of the Fusco crew—the only girl, but definitely a strong and shining one! She’s curious, 
+                    kind, and loves experimenting with new cookie ideas and flavors. Cece takes pride in helping with the 
+                    packaging and always adds her special touch to make everything feel extra lovely. She has a natural sense 
+                    of style and often suggests how we can present things better. Cece reminds us that sweetness comes in many
+                    forms—kindness, creativity, and a sprinkle of sparkle.</p>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="footer">
+        <section class="footer-content">
+            <h2>Mr Cookie</h2>
+            <p>Managua, Nicaragua</p>
+            <p>Phone: 505 8693 1742</p>
+            <p>©<span id="current-year"></span></p>
+            <p class="last-modified"></p>
+        </section>
+        <section class="footer-icons">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/">
+                    <img src="images/facebook.webp" alt="Facebook">
+                </a>
+                <a href="https://www.tiktok.com/@mr.cookie.homebaked">
+                    <img src="images/ticktok.png" alt="TikTok">
+                </a>
+                <a href="https://www.instagram.com/mr.cookie.homebaked/">
+                    <img src="images/instagram.webp" alt="Instagram">
+                </a>
+            </div>
+
+            <ul>
+                <li>Visiting our website:</li>
+                <li id="visit-message-container"></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+
+</html>

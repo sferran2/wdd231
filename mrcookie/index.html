@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="styles/mrlarge.css">
         <link rel="stylesheet" href="styles/mrmedium.css">
         <link rel="stylesheet" href="styles/mrmedium.css" media="(max-width: 640px)">
+        <script src="scripts/main.js" defer></script>
         <script src="scripts/index.js" defer></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,7 +45,7 @@
                             <ul class="nav-list" id="nav-list">
                                 <li><a href="#" class="active" aria-label="Go to Home">Home</a></li>
                                 <li><a href="order.html" aria-label="Menu">Order</a></li>
-                                <li><a href="aboutus.html" aria-label="Join">About Us</a></li>
+                                <li><a href="about.html" aria-label="Join">About Us</a></li>
                                 <li>
                                     <button id="dark-mode-toggle" aria-label="Toggle dark mode">
                                         <img src="images/darkmode.svg" alt="Dark Mode Toggle" width="24">
@@ -67,31 +68,30 @@
         </main>
         <footer class="footer">
             <section class="footer-content">
-                <div class="footer-info">
-                    <p><strong>Mr Cookie</strong></p>
-                    <p>Managua, Nicaragua</p>
-                    <p>Instagram @mr.cookie.Homebaked (Direct Message)</p>
-                    <p>mrcookieinfo@gmail.com</p>
-                    <p>Phone: 505 8693 1742</p>
-                    <p>©<span id="current-year"></span></p>
-                    <p class="last-modified"></p>
+                <h2>Mr Cookie</h2>
+                <p>Managua, Nicaragua</p>
+                <p>Phone: 505 8693 1742</p>
+                <p>©<span id="current-year"></span></p>
+                <p class="last-modified"></p>
+            </section>
+            <section class="footer-icons">
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/">
+                    <img src="images/facebook.webp" alt="Facebook">
+                  </a>
+                  <a href="https://www.tiktok.com/@mr.cookie.homebaked">
+                    <img src="images/ticktok.png" alt="TikTok">
+                  </a>
+                  <a href="https://www.instagram.com/mr.cookie.homebaked/">
+                    <img src="images/instagram.webp" alt="Instagram">
+                  </a>
                 </div>
-                <div class="footer-icons">
-                    <a href="https://www.facebook.com/">
-                        <img src="images/facebook.webp" alt="Facebook" width="30">
-                    </a> 
-                    <a href="https://www.tiktok.com/@mr.cookie.homebaked?fbclid=PAZXh0bgNhZW0CMTEAAabM0sS43ijxhnK7y-Ez9_nb0wRmLdyKTazh2-Nss3LLGNBQuEu0MbCCq_Q_aem_sFa88nymTuf0D8xpkXFdJw">
-                        <img src="images/ticktok.png" alt="ticktok.com" width="30"> 
-                    </a>
-                    <a href="https://www.instagram.com/mr.cookie.homebaked/">
-                        <img src="images/instagram.webp" alt="Instagram" width="30"> 
-                    </a>
-                </div>
+              
                 <ul>
-                    <li>Visiting our website: </li>
-                    <li id="visit-message-container"></li>
+                  <li>Visiting our website:</li>
+                  <li id="visit-message-container"></li>
                 </ul>
-            </section>   
+              </section> 
         </footer>
     </body>
 </html>
