@@ -135,17 +135,20 @@ body.dark-mode .cards-grid h2 {
   justify-content: space-between;
   align-items: flex-start;
   padding: 2rem;
-  max-width: 100%;
+  max-width: 95%;
   margin: 0 auto;
   font-family: sans-serif;
   flex-wrap: wrap;
   gap: 2rem;
   background-color: #8c6050;
+  border-radius: .5rem;
 
 }
 
 .footer-content {
   flex: 1;
+  margin-left: 70px;
+  
 }
 
 .footer-content h2 {
@@ -156,7 +159,7 @@ body.dark-mode .cards-grid h2 {
 }
 
 .footer-content p {
-  margin: 0.25rem 0;
+  margin: 0.1rem 0 ;
   color: #FFF4E0;
   font-size: 0.95rem;
 }
@@ -184,6 +187,7 @@ body.dark-mode .cards-grid h2 {
   padding: 5px;
   width: 44px;
   height: 44px;
+  margin-right: 45px;
 }
 
 .footer-icons ul {
@@ -210,7 +214,8 @@ body.dark-mode .cards-grid h2 {
 
 .hero {
   position: relative;
-  height: 90vh;
+  width: 95%;
+  height: 80vh;
   background-size: cover;
   background-position: center;
   background-image: url('../images/mr1.webp');
@@ -221,6 +226,8 @@ body.dark-mode .cards-grid h2 {
   text-align: center;
   transition: background-image 1s ease-in-out;
   margin-bottom: 60px;
+  margin-left: 40px;
+
 }
 
 .hero::after {
@@ -280,7 +287,7 @@ body.dark-mode .cards-grid h2 {
   margin-left: 40px;
   max-width: 95%;
   padding: 2rem;
-  background-color: #5C2618;
+  background-color: #bb9988;
   border-radius: 10px;
   grid-template-areas:
     "image ft_invite"
@@ -302,7 +309,8 @@ body.dark-mode .cards-grid h2 {
   color: #F6571A;
   font-size: 2.0rem;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: justify;
+  
 }
 
 .product-week-section p {
@@ -310,14 +318,14 @@ body.dark-mode .cards-grid h2 {
   color: #444;
   margin-top: .5rem;
   font-size: 1.5rem;
-  text-align: center;
+  text-align: justify;
   color: #FFF4E0;
 }
 
 .product-week-section button {
   grid-area: button;
-  background-color: #bb9988;
-  color: #270503;
+  background-color: #270503;
+  color: #FFF4E0;
   border: none;
   padding: 0.6rem 1.2rem;
   font-weight: bold;
@@ -441,11 +449,9 @@ body.dark-mode .cards-grid h2 {
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
   max-width: 1000px;
-  margin-bottom: 2px;
-  margin-left: 280px;
-  margin-bottom: 150px;
-  perspective: 1000px;
+  margin: 0 auto 150px auto;
   padding: 20px;
+  perspective: 1000px;
 }
 
 .flip-card {
@@ -488,13 +494,14 @@ body.dark-mode .cards-grid h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
   padding: 3rem;
   background-color: #42160E;
   border-radius: 2rem;
-  max-width: 1300px;
-  margin: 3rem auto;
+  max-width: 90%;
+  margin: 6rem auto;
   height: 300px;
+  text-align: justify;
 }
 
 .portrait {
