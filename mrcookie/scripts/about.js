@@ -1,9 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
     const heroImages = [
-      "images/fam1.webp", "images/fam2.webp", "images/fam3.webp",
-      "images/fam4.webp", "images/fam5.webp", "images/fam6.webp",
-      "images/fam7.webp", "images/fam8.webp", "images/fam9.webp",
-      "images/fam10.webp", "images/fam11.webp", "images/fam12.webp",
+      "images/fam1.webp", 
+      "images/fam2.webp", 
+      "images/fam3.webp",
+      "images/fam4.webp", 
+      "images/fam5.webp", 
+      "images/fam6.webp",
+      "images/fam7.webp", 
+      "images/fam8.webp", 
+      "images/fam9.webp",
+      "images/fam10.webp",
+      "images/fam11.webp", 
+      "images/fam12.webp",
       "images/fam13.webp"
     ];
   
@@ -23,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const back = document.createElement("div");
       back.classList.add("flip-card-back");
       const backImg = document.createElement("img");
-      backImg.src = imgSrc; // placeholder, updated on flip
+      backImg.src = imgSrc;
       back.appendChild(backImg);
   
       card.appendChild(front);
@@ -52,13 +60,12 @@ document.addEventListener("DOMContentLoaded", () => {
   
           card.classList.add("flip");
   
-          // After animation, swap back image to front
           setTimeout(() => {
             const frontImg = card.querySelector(".flip-card-front img");
             frontImg.src = heroImages[newIndex];
             card.classList.remove("flip");
-          }, 800); // match the CSS flip duration
-        }, i * 300); // staggered flip
+          }, 800); 
+        }, i * 300);
       });
   
       currentIndex = (currentIndex + 5) % heroImages.length;

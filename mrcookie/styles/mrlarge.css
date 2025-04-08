@@ -44,7 +44,7 @@ body {
   text-align: center;
 }
 
-.nav {
+.nav-wrap {
   display: flex;
   padding: 10px;
   justify-content: space-between;
@@ -140,7 +140,8 @@ body.dark-mode .cards-grid h2 {
   font-family: sans-serif;
   flex-wrap: wrap;
   gap: 2rem;
-  border-top: 15px solid #5c2618;
+  background-color: #8c6050;
+
 }
 
 .footer-content {
@@ -149,14 +150,14 @@ body.dark-mode .cards-grid h2 {
 
 .footer-content h2 {
   margin-bottom: 0.5rem;
-  color: #a24e2e;
+  color: #270503;
   font-family: "EB Garamond";
   font-size: 2rem;
 }
 
 .footer-content p {
   margin: 0.25rem 0;
-  color: #333;
+  color: #FFF4E0;
   font-size: 0.95rem;
 }
 
@@ -169,7 +170,7 @@ body.dark-mode .cards-grid h2 {
 
 .footer-icons div {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -219,6 +220,7 @@ body.dark-mode .cards-grid h2 {
   color: white;
   text-align: center;
   transition: background-image 1s ease-in-out;
+  margin-bottom: 60px;
 }
 
 .hero::after {
@@ -263,13 +265,20 @@ body.dark-mode .cards-grid h2 {
 
 /*feature cookie*/
 
+.product-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #d44c00;
+  margin-bottom: 1rem;
+}
+
 .product-week-section {
   display: grid;
   grid-template-columns: 300px 800px;
   grid-template-rows: auto auto auto auto;
-  column-gap: 9rem;
+  column-gap: 7rem;
+  margin-left: 40px;
   max-width: 95%;
-  margin: 6rem auto;
   padding: 2rem;
   background-color: #5C2618;
   border-radius: 10px;
@@ -308,7 +317,7 @@ body.dark-mode .cards-grid h2 {
 .product-week-section button {
   grid-area: button;
   background-color: #bb9988;
-  color: #270503 ;
+  color: #270503;
   border: none;
   padding: 0.6rem 1.2rem;
   font-weight: bold;
@@ -349,6 +358,14 @@ body.dark-mode .cards-grid h2 {
 
 /*reviews*/
 
+.review-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #d44c00;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+}
+
 .review-section {
   display: flex;
   gap: 1.5rem;
@@ -357,7 +374,9 @@ body.dark-mode .cards-grid h2 {
   padding: 2rem;
   background-color: #c9560f;
   max-width: 95%;
-  margin: 6rem auto;
+  margin: 2rem auto;
+  border-radius: 10px;
+  padding: 2rem;
 }
 
 .review-card {
@@ -389,15 +408,31 @@ body.dark-mode .cards-grid h2 {
   font-size: 1rem;
 }
 
+.review-wrapper {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: #c9560f;
+  max-width: 95%;
+  margin: 0px auto;
+  border-radius: 10px;
+}
+
+
 /*about us*/
 
-.fuscos{
-  font-size: 2rem;
-  text-align: center;
-  padding: 20px;
+.fuscos {
+  margin-bottom: 0.2rem;
+  /* ↓ reduces space under the title */
+  font-size: 3.5rem;
   color: #F6571A;
-  transition: all 0.3s ease-in-out;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 0.5rem;
 }
+
 
 /*rotation family photos*/
 
@@ -406,8 +441,11 @@ body.dark-mode .cards-grid h2 {
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
   max-width: 1000px;
-  margin: 2rem auto;
+  margin-bottom: 2px;
+  margin-left: 280px;
+  margin-bottom: 150px;
   perspective: 1000px;
+  padding: 20px;
 }
 
 .flip-card {
@@ -443,115 +481,69 @@ body.dark-mode .cards-grid h2 {
 .flip-card-back {
   transform: rotateY(180deg);
 }
+
 /*family description*/
 
-.feature-card_a {
-  display: block; 
-  position: relative;
+.feature-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem;
   background-color: #42160E;
   border-radius: 2rem;
-  padding: 3rem 3rem 3rem 300px; /* left padding gives space for portrait */
-  overflow: visible;
-  max-width: 1500px;
-  margin: 4rem auto;
+  max-width: 1300px;
+  margin: 3rem auto;
+  height: 300px;
 }
 
-.portrait_a {
-  position: absolute;
-  top: -40px;
-  left: 40px;
+.portrait {
+  flex-shrink: 0;
   width: 220px;
   background-color: white;
   padding: 8px;
   border-radius: 8px;
   transform: rotate(-5deg);
-  z-index: 3;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.portrait_a img {
-  width: 200px;
+.feature-card.reverse {
+  flex-direction: row-reverse;
+  background-color: #BB9988;
+  color: #270503;
+}
+
+.feature-card.reverse .portrait {
+  transform: rotate(5deg);
+}
+
+.portrait img {
+  width: 100%;
   height: auto;
   display: block;
   border-radius: 4px;
+  transition: transform 0.4s ease-in-out;
 }
 
-.portrait_a img:hover {
+.portrait img:hover {
   transform: translateY(-18px);
   box-shadow: 0 10px 20px #F6571A;
 }
 
-
-.text_a {
-  z-index: 1;
-}
-
-.text_a h2 {
+.feature-text h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color:#FFF4E0;
-}
-
-.text_a p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  font-family: sans-serif;
   color: #FFF4E0;
 }
 
-.feature-card_b {
-  display: block; 
-  position: relative;
-  background-color:#BB9988;
-  border-radius: 2rem;
-  padding: 3rem 300px 3rem 3rem; /* left padding gives space for portrait */
-  overflow: visible;
-  max-width: 1500px;
-  margin: 4rem auto;
-  color: white;
-
-.portrait_b {
-  position: absolute;
-  top: -40px;
-  right: 40px;
-  width: 220px;
-  background-color: white;
-  padding: 8px;
-  border-radius: 8px;
-  transform: rotate(5deg);
-  z-index: 3;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-.portrait_b img {
-  width: 200px;
-  height: auto;
-  display: block;
-  border-radius: 4px;
-  transition: 1s ease-in-out;
-}
-
-.portrait_b img:hover {
-  transform: translateY(-18px);
-  box-shadow: 0 10px 20px #F6571A;
-
-
-.text_b {
-  z-index: 1;
-}
-
-.text_b h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.feature-card.reverse .feature-text h2,
+.feature-card.reverse .feature-text p {
   color: #270503;
 }
 
-.text_b p {
+.feature-text p {
   font-size: 1.1rem;
   line-height: 1.6;
-  margin-bottom: 2rem;
   font-family: sans-serif;
-  color: #270503;
+  color: #FFF4E0;
 }
-

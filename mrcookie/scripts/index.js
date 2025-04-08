@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    
+
     // 🔸 Hero Image Rotation
     const heroImages = [
         'images/mr1.webp',
@@ -42,6 +42,10 @@ document.addEventListener("DOMContentLoaded", function () {
     
             const card = document.createElement("section");
             card.classList.add("product-week-section");
+
+            const heading = document.createElement("h2");
+            heading.classList.add("product-heading");
+            heading.textContent = "Our Sweet Star of the Week!";
     
             const image = document.createElement("img");
             image.src = featured.image;
@@ -63,6 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
             button.style.gridArea = "button";
     
             card.append(image, invite, extra, button);
+            container.appendChild(heading);
             container.appendChild(card);
         } catch (error) {
             console.error("Error loading featured cookie:", error);
@@ -82,6 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // reviews
 
     async function loadReviews() {
+        
         try {
           const res = await fetch("data/reviews.json");
           const data = await res.json();
@@ -100,11 +106,21 @@ document.addEventListener("DOMContentLoaded", function () {
           localStorage.setItem("reviewQueue", JSON.stringify(remaining));
       
           const container = document.getElementById("reviews");
+        
           container.innerHTML = "";
+
+          const heading = document.createElement("h2");
+          heading.classList.add("review-heading");
+          heading.textContent = "Happy Bites, Happy Hearts!";
+
+ 
+          const wrapper = document.createElement("div");
+          wrapper.classList.add("review-wrapper");
+
           currentReviews.forEach(review => {
             const card = document.createElement("div");
             card.classList.add("review-card");
-      
+     
             const name = document.createElement("h4");
             name.textContent = review.name;
       
