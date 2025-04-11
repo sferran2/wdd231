@@ -114,6 +114,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function renderTable(businesses) {
+
+        const isMobileView = window.innerWidth >= 320 && window.innerWidth <= 640;
+
         let table = document.createElement("table");
         table.setAttribute("border", "1");
         table.style.width = "100%";
@@ -134,18 +137,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
         businesses.forEach(business => {
             let row = document.createElement("tr");
-            row.innerHTML = `
-                <td>${business.companyName}</td>
-                <td>${business.address}</td>
-                <td>${business.phoneNumber}</td>
-                <td><a href="${business.website}" target="_blank">${business.website}</a></td>
-            `;
+
+            if (isMobileView){
+                row.innerHTML = `
+                    <td>${business.companyName}</td>
+                    <td>${business.address}</td>
+                    <td>${business.phoneNumber}</td>
+                    <td><a href="${business.website}" target="_blank">Visit Website</a></td>
+                `;
+            } else {
+                row.innerHTML = `
+                    <td>${business.companyName}</td>
+                    <td>${business.address}</td>
+                    <td>${business.phoneNumber}</td>
+                    <td><a href="${business.website}" target="_blank">${business.website}</a></td>
+                `;
+            }
+        
             tbody.appendChild(row);
         });
 
         table.appendChild(tbody);
         tableContainer.appendChild(table);
-    }
+    };
 
     fetchBusinessData();
 });
@@ -174,4 +188,3 @@ document.addEventListener("DOMContentLoaded", function () {
         listViewBtn.classList.add("active");
     });
 });
-

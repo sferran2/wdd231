@@ -10,7 +10,7 @@
         align-self: center;
         position: absolute;
         right: 20px;
-        top: 50%;
+        top: 45%;
         transform: translateY(-50%);
         z-index: 1000;
     }
@@ -67,7 +67,7 @@
     }
 
     #animeteme.open {
-        height: auto;
+        height: 390px;
         max-height: 500px;
         padding: 10px 0;
     }
@@ -100,32 +100,41 @@
 
     .footer {
         padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .footer-content {
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
 
     .footer-info {
         font-size: 14px;
         font-weight: bold;
+        text-align: center;
+        line-height: .8;
     }
 
     .footer-icons {
         gap: 12px;
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
 
     .footer-icons img {
         width: 30px;
         height: 30px;
-
     }
 
 
     .footer-credits {
         font-size: 14px;
         font-weight: bold;
-
+        text-align: center;
     }
 
 
@@ -280,21 +289,21 @@
     .infoDisplay>div {
         background-color: #8ab17d;
         border-radius: 5px;
-        padding: 20px;
+        padding: 10px;
         box-sizing: border-box;
         margin-bottom: 20px;
 
     }
 
     .events {
-        height: 400px;
+        height: 570px;
     }
 
 
 
     h3 {
         width: 80%;
-        margin-left: 54px;
+        margin-left: 34px;
     }
 
     /*join page*/
@@ -361,50 +370,89 @@
     /*discover*/
 
     .cards-grid {
-        grid-template-columns: 1fr;
-        max-width: 500px;
-      }
-      
-      .cards-grid section {
-        grid-template-areas: 
-        "name"
-        "image"
-        "description"
-        "address"
-        "button"
+        display: grid;
+        grid-template-columns: 1fr; /* One column for mobile */
+        gap: 1.5rem; /* Adjust the gap between cards */
+        max-width: 100%; /* Ensure it takes the full width of the container */
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0 10px; /* Add some padding for better spacing on small screens */
+    }
+
+    .cards-grid section {
+        background-color: #f9f9f9;
+        border: 3px solid #e76f51; /* Smaller border for mobile */
+        border-radius: 8px; /* Smaller border radius for mobile */
+        padding: 10px;
+        transition: transform 0.3s ease;
+
+        display: grid;
+        grid-template-areas:
+            "name"
+            "image"
+            "description"
+            "address"
+            "button"
         ;
-      }
-      
-      .cards-grid img {
-        grid-area: image;
+    }
+
+    .cards-grid section>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+    }
+
+    .cards-grid section:hover {
+        transform: scale(1.01);
+    }
+
+    .cards-grid img {
+        border-radius: 5px; /* Smaller border radius for mobile */
         width: 100%;
         height: auto;
-      }
-    
-      .cards-grid h2 {
-          grid-area: name;
-      }
-    
-      .cards-grid address {
-          grid-area: address;
-      }
-    
-      .cards-grid p {
-          grid-area: description;
-      }
-    
-      .cards-grid button {
-          grid-area: button;
-      }
-      .cards-grid section:hover {
-        transform: none;
-    }
-    
+        grid-area: image;
     }
 
+    .cards-grid h2 {
+        font-size: 1.2rem; /* Smaller font size */
+        font-weight: bold;
+        margin: 0.5rem 10px;
+        grid-area: name;
+    }
 
+    .cards-grid address {
+        font-style: italic;
+        margin-top: 0.5rem;
+        color: #333;
+        grid-area: address;
+    }
 
+    .cards-grid p {
+        line-height: 1.4;
+        color: #444;
+        font-size: 14px; /* Adjust text size for readability */
+        grid-area: description;
+    }
+
+    .cards-grid button {
+        align-self: center;
+        margin-top: 1rem;
+        padding: 0.6rem 2rem; /* Adjust padding for a more compact button */
+        font-size: 1rem; /* Smaller font size for mobile */
+        border: none;
+        border-radius: 20px; /* Adjust border radius for smaller buttons */
+        background-color: #2a9d8f;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        grid-area: button;
+    }
+
+    .cards-grid button:hover {
+        background-color: #8AB17D;
+    }
     
-   
-
-
+}

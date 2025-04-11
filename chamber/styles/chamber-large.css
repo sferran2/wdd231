@@ -27,12 +27,19 @@ body {
     padding: 10px;
     margin-left: 10px;
     border-radius: 75px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logoContainer a:hover .logo {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
 }
 
 .chamber {
     font-size: 3rem;
     padding: 30px;
     color: #2C1607;
+    
 }
 
 .type {
@@ -43,6 +50,22 @@ body {
 .chamber span {
     display: block;
     text-align: justify;
+    transition: color 0.3s ease, transform 0.3s ease;
+    color: #2C1607;
+    text-decoration: none;
+}
+
+.chamber a {
+    text-decoration: none;  /* Remove underline */
+    color: inherit;         /* Make sure the text color is inherited from the parent */
+}
+
+.chamber a:hover {
+    color: #8AB17D;         /* Optional: Change color on hover */
+}
+
+.chamber span:hover {
+    transform: scale(1.05);
 }
 
 .nav {
@@ -71,6 +94,13 @@ body {
     font-weight: bolder;
     font-size: 1.2rem;
     margin-left: 60px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.nav-list a:hover {
+    color: black; 
+    background-color: #ebc069; 
+    padding: 5px 10px; 
+    border-radius: 4px; 
 }
 
 .nav-list a.active {
@@ -120,7 +150,7 @@ body.dark-mode .cards-grid h2 {
     font-size: 18px;
     font-weight: bold; 
     text-align: center;
-    background-color: #ECBC68;
+    background-color: #f8e5c3;
     border-radius: 5px; 
     display: inline-block;
     margin-bottom: 80px;
@@ -802,7 +832,7 @@ dialog::backdrop {
     border: 5px solid #e76f51;
     border-radius: 12px;
     padding: 15px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;;
 
     display: grid;
     grid-template-areas:
@@ -822,13 +852,24 @@ dialog::backdrop {
 }
 
 .cards-grid section:hover {
-    transform: scale(1.01);
+    transform: scale(1.02); /* Slightly enlarge card on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .cards-grid img {
     border-radius: 8px;
     width: 100%;
     grid-area: image;
+    transition: transform 0.3s ease;
+}
+
+.cards-grid img:hover {
+    transform: scale(1.05); /* Slightly zoom in the image on hover */
+}
+
+.cards-grid a:hover {
+    color: #2a9d8f; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
 }
 
 .cards-grid h2 {
@@ -836,6 +877,7 @@ dialog::backdrop {
     font-weight: bold;
     margin: 1rem 10px;
     grid-area: name;
+    transition: color 0.3s ease; 
 }
 
 .cards-grid address {
@@ -863,12 +905,13 @@ dialog::backdrop {
     color:black;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     grid-area: button;
 }
 
 .cards-grid button:hover {
     background-color: #8AB17D;
+    transform: scale(1.05);
 }
 
 .invitation{
