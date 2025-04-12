@@ -30,16 +30,7 @@
       "price_mini": 2,
       "image": "images/mrvalentine.webp"
     },
-    {
-      "id": 4,
-      "name": "Miss Sweety",
-      "description": "Sugar cookie with buttercream frosting.",
-      "extra_description": "Miss Sweety is all things soft, sweet, and sprinkled with joy. A buttery sugar cookie topped with a swirl of rich, creamy frosting. It’s cheerful, colorful, and melts in your mouth. Perfect for parties, picnics, or any time you need a little sugar magic.",
-      "price_large": 3,
-      "price_mini": 1.50,
-      "image": "images/swety.webp",
-      "featured_invite": "Say hello to Miss Sweety — a sugar cookie dream with a swirl of buttercream frosting. She’s soft, sweet, and full of sunshine. Perfect for teatime, me-time, or anytime. Try her this week only!"
-    },
+  
     {
       "id": 5,
       "name": "Mr. Brown",
@@ -87,7 +78,7 @@
       "extra_description": "Mr. Oreo is the cookie inside a cookie. Rich chocolate dough filled with chunks of real Oreo cookies, plus white and dark chocolate chips. It’s the best of all worlds—creamy, crunchy, and chewy. A must-try for cookie lovers who want it all.",
       "price_large": 3,
       "price_mini": 1.50,
-      "image": "images/mroreos.webp",
+      "image": "images/mroreo.webp",
       "featured_invite": "Cookies inside a cookie? Yes, please! Mr. Oreo is stuffed with chunks of your favorite sandwich cookie plus white and dark chocolate chips. He’s crunchy, chewy, and unforgettable. Don’t miss this double delight!"
     },
     {
