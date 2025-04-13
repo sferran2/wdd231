@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="styles/mrmedium.css">
     <link rel="stylesheet" href="styles/mrsmall.css" media="(max-width: 640px)">
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/index.js" defer></script>
+    <script src="scripts/summary.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,22 +58,49 @@
                 </section>
         </div>
     </header>
-    <main>
-      <section class="hero">
-        <div class="hero-content">
-          <h1>Welcome to Mr. Cookie</h1>
-          <a href="order.html" class="hero-btn">Order Now!</a>
-        </div>
-      </section>
-    
-      <section class="product-of-the-week" id="featuredProduct">
-        <h2 class="product-heading">Our Sweet Star of the Week!</h2>
-      </section>
-
-      <h2 class="review-heading">Happy Bites, Happy Hearts!</h2>
-      <section id="reviews" class="review-section">
-      </section> 
-    </main>          
+    <main class="confirmation">
+        <h2>Order Confirmation</h2>
+        <section class="order-layout">
+          <div class="order-info">
+            <form method="get" action="confirmation.html" class="fpr1">
+              <fieldset>
+                <legend>Your Information</legend>
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <label>Phone Number <input type="tel" name="phone" placeholder="1235551234"></label>
+                <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+              </fieldset>
+              <fieldset>
+                <legend>Pick Up Date</legend>
+                <label>Date* <input type="date" name="date" required></label>
+                <label>Time*<input type="time" name="time" placeholder="12345-6789" required></label>
+              </fieldset>
+              <fieldset>
+                <legend>Payment Type</legend>
+                <div class="bfr1">
+                  <label><input type="radio" name="paytype" value="cash" required> Cash</label>
+                  <label><input type="radio" name="paytype" value="banktransfer"required> Bank Transfer</label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Comments or Special Requests</legend>
+                <textarea id="comments" name="comments" rows="4" placeholder="Allergies, delivery notes, favorite cookie..."></textarea>
+              </fieldset>
+            </form>
+          </div>
+          <div class="order-sum">
+            <aside id="order-summary">
+                <h2>Your Box (<span id="cart-count">0</span>)</h2>
+                <ul id="order-list"></ul>
+                <p class="subtotal">
+                    <strong>Total:</strong> <span id="order-total">$0.00</span>
+                </p>
+                <a href="confirmation.html" id="confirm-btn" class="checkout-btn">Bake My Box!</a>
+            </aside>
+            <a href="order.html" class="back-btn">← Back to Cart</a>
+           </div>
+        </section>
+    </main>
     <footer class="footer">
       <section class="footer-content">
         <a href="index.html">

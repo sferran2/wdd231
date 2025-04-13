@@ -62,8 +62,10 @@ document.addEventListener("DOMContentLoaded", function () {
             extra.textContent = featured.extra_description;
             extra.style.gridArea = "ex_description";
     
-            const button = document.createElement("button");
+            const button = document.createElement("a");
             button.textContent = "Order Now";
+            button.href = "order.html";
+            button.classList.add("order-now-btn")
             button.style.gridArea = "button";
     
             card.append(image, invite, extra, button);

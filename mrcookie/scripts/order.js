@@ -6,7 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const listViewBtn = document.getElementById("list-view");
 
     let allCookies = [];
-    let cart = {}; 
+    let cart = {};
+    if (localStorage.getItem("restoreCart") === "true") {
+        cart = JSON.parse(localStorage.getItem("cookieCart")) || {};
+        localStorage.removeItem("restoreCart"); // remove flag so it doesn't stick around
+    } else {
+        cart = {}; // start fresh
+    }
 
     async function fetchCookiesData() {
         try {
@@ -110,6 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         totalDisplay.textContent = `$${total.toFixed(2)}`;
         cartCount.textContent = count;
+        localStorage.setItem("cookieCart", JSON.stringify(cart));
     }
 
     function displayCookies(cookies) {
@@ -150,7 +157,8 @@ document.addEventListener("DOMContentLoaded", function () {
             let bigMinus = document.createElement("button");
             bigMinus.textContent = "–";
             let bigQty = document.createElement("span");
-            bigQty.textContent = "0";
+            const savedBig = cart[`${cookie.name}-big`];
+            bigQty.textContent = savedBig ? savedBig.quantity : "0";        
             let bigPlus = document.createElement("button");
             bigPlus.textContent = "+";
 
@@ -196,7 +204,8 @@ document.addEventListener("DOMContentLoaded", function () {
             let miniMinus = document.createElement("button");
             miniMinus.textContent = "–";
             let miniQty = document.createElement("span");
-            miniQty.textContent = "0";
+            const savedMini = cart[`${cookie.name}-mini`];
+            miniQty.textContent = savedMini ? savedMini.quantity : "0";
             let miniPlus = document.createElement("button");
             miniPlus.textContent = "+";
 
@@ -264,9 +273,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 <td>${cookie.name}</td>
                 <td>${cookie.description}</td>
                 <td>${parseFloat(cookie.price_large).toFixed(2)}</td>
-                <td><input type="number" min="0" value="0" class="qty-input" data-name="${cookie.name}" data-size="large"></td>
+                <td><input type="number" min="0" value="${cart[`${cookie.name}-big`]?.quantity || 0}" class="qty-input" data-name="${cookie.name}" data-size="large"></td>
                 <td>${parseFloat(cookie.price_mini).toFixed(2)}</td>
-                <td><input type="number" min="0" value="0" class="qty-input" data-name="${cookie.name}" data-size="mini"></td>
+                <td><input type="number" min="0" value="${cart[`${cookie.name}-big`]?.quantity || 0}" class="qty-input" data-name="${cookie.name}" data-size="mini"></td>
             `;
 
             tbody.appendChild(row);
@@ -324,4 +333,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     fetchCookiesData();
     updateCartDisplay();
+
+    const form = document.querySelector("form");
+    if (form) {
+        form.addEventListener("submit", function () {
+            localStorage.setItem("cookieCart", JSON.stringify(cart));
+        });
+    }
+
+    const continueBtn = document.querySelector(".checkout-btn");
+    if (continueBtn) {
+        continueBtn.addEventListener("click", () => {
+            localStorage.setItem("cookieCart", JSON.stringify(cart));
+        });
+    }
 });
