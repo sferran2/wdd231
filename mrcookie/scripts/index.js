@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // 🔸 Hero Image Rotation
     const heroImages = [
         'images/mr1.webp',
         'images/mr2.webp',
@@ -30,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
             const cookiesData = await res.json();
             const cookies = cookiesData.cookies;
     
-            // Calculate week number 
             const currentWeek = new Date().getWeekNumber();
             const index = currentWeek % cookies.length;
             const featured = cookies[index];
@@ -43,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const card = document.createElement("section");
             card.classList.add("product-week-section");
 
-            const heading = document.createElement("h2");
+            const heading = document.createElement("h1");
             heading.classList.add("product-heading");
             heading.textContent = "Our Sweet Star of the Week!";
     
@@ -54,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
             image.height = 400;
             image.style.gridArea = "image";
     
-            const invite = document.createElement("h3");
+            const invite = document.createElement("h2");
             invite.innerHTML = featured.featured_invite.replace(/\n/g, "<br>");
             invite.style.gridArea = "ft_invite";
     
@@ -123,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const card = document.createElement("div");
             card.classList.add("review-card");
      
-            const name = document.createElement("h4");
+            const name = document.createElement("h3");
             name.textContent = review.name;
       
             const date = document.createElement("div");

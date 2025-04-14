@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // 🔸 Dark Mode Toggle
+    // Dark Mode Toggle
     const toggleButton = document.getElementById("dark-mode-toggle");
     const body = document.body;
 
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("darkMode", body.classList.contains("dark-mode") ? "enabled" : "disabled");
     });
 
-    // 🔸 Footer Date
+    // Footer Date
     const yearEl = document.getElementById('current-year');
     if (yearEl) yearEl.textContent = new Date().getFullYear();
 
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const lastMod = document.querySelector('.last-modified');
     if (lastMod) lastMod.textContent = `Last Access: ${formattedDate}`;
 
-    // 🔸 Hamburger Menu
+    // Hamburger Menu
     const menuButton = document.querySelector('#menu');
     const nav = document.querySelector('#animeteme');
     menuButton?.addEventListener('click', () => {
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         menuButton.classList.toggle('open');
     });
 
-    // 🔸 Last Visit Message
+    // Last Visit Message
     const lastVisitDate = localStorage.getItem("lastVisit");
     const currentVisitDate = Date.now();
 

@@ -1,0 +1,491 @@
+@media (min-width: 641px) and (max-width: 1024px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .logoContainer {
+        gap: 15px;
+    }
+
+    .logo {
+        width: 120px;
+        border-radius: 60px;
+        margin-left: 5px;
+    }
+
+    .mrname {
+        font-size: 2.5rem;
+        padding: 20px;
+    }
+
+    .type {
+        font-size: 1.3rem;
+    }
+
+    .nav-wrap {
+        padding: 8px;
+        justify-content: space-around;
+    }
+
+    .nav-list {
+        gap: 8px;
+    }
+
+    .nav-list a {
+        font-size: 1.1rem;
+        margin-left: 30px;
+    }
+
+    #dark-mode-toggle img {
+        width: 20px;
+    }
+
+    .visit-message {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+
+    .footer {
+        padding: 1.5rem;
+        height: auto;
+        gap: 1.5rem;
+    }
+
+    .footer-content {
+        margin-left: 30px;
+    }
+
+    .footer-content h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .footer-content p {
+        font-size: 0.9rem;
+    }
+
+    .footer-icons img {
+        width: 38px;
+        height: 38px;
+        margin-right: 25px;
+    }
+
+    .footer-icons ul {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .social-icons {
+        gap: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .hero {
+        height: 60vh;
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+
+    .hero-content {
+        max-width: 500px;
+        padding: 0.8rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .hero-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 1.3rem;
+        border-radius: 6px;
+        margin-top: 0.8rem;
+    }
+
+    .product-heading {
+        font-size: 2.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .product-week-section {
+        grid-template-columns: 250px 1fr;
+        column-gap: 3rem;
+        margin-left: 20px;
+        padding: 1.5rem;
+        grid-template-areas:
+            "image ft_invite"
+            "image ex_description"
+            "image button"
+            "image .";
+    }
+
+    .product-week-section img {
+        margin-left: 20px;
+    }
+
+    .product-week-section h3 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .product-week-section p {
+        font-size: 1.3rem;
+        margin-top: 0.3rem;
+    }
+
+    .order-now-btn {
+        padding: 0.5rem 1rem;
+        font-size: 1.1rem;
+        border-radius: 6px;
+        margin-top: 0.8rem;
+    }
+
+    .invite-line {
+        font-size: 0.9rem;
+        margin: 0.3rem 0;
+    }
+
+    .review-heading {
+        font-size: 2.2rem;
+        margin-top: 4rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .review-section {
+        padding: 1.5rem;
+        margin: 1.5rem auto;
+    }
+
+    .review-card {
+        width: 300px;
+        padding: 1.2rem;
+    }
+
+    .review-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .review-card .date {
+        font-size: 0.8rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .review-card .stars {
+        font-size: 1rem;
+    }
+
+    .review-card p {
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+    }
+
+    .review-wrapper {
+        padding: 1.5rem;
+        margin: 0px auto;
+    }
+
+    .fuscos {
+        font-size: 3rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .hero-flip-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0.8rem;
+        max-width: 800px;
+        margin-bottom: 100px;
+        padding: 15px;
+    }
+
+    .flip-card {
+        height: 180px;
+    }
+
+    .feature-card {
+        gap: 2rem;
+        padding: 2rem;
+        border-radius: 1.5rem;
+        max-width: 95%;
+        margin: 4rem auto;
+        height: 450px;
+    }
+
+    .portrait {
+        width: 180px;
+    }
+
+    .feature-text h2 {
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .feature-text p {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .cookie-card {
+        padding: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .cookie-img {
+        width: 80px;
+        height: 120px;
+        margin-right: 0.8rem;
+    }
+
+    .cookie-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .cookie-info p {
+        font-size: 1.1rem;
+        margin: 0.6rem 0;
+    }
+
+    .counter {
+        width: 100px;
+        padding: 0.2rem 0.4rem;
+    }
+
+    .counter button {
+        font-size: 0.9rem;
+    }
+
+    .counter span {
+        font-size: 0.9rem;
+    }
+
+    .menu-layout {
+        grid-template-columns: 2fr 1fr;
+        gap: 0.5rem;
+        padding: 1.5rem;
+    }
+
+    .cookie-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.8rem;
+    }
+
+    .empty-box {
+        font-size: 1.1rem;
+        padding: 1.5rem 0.8rem;
+    }
+
+    #order-summary {
+        padding: 1rem;
+        max-width: 165px;
+    }
+
+    #order-summary h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .cart-item {
+        padding: 0.2rem 0;
+    }
+
+    .cart-item-details {
+        font-size: 0.9rem;
+    }
+
+    .cart-item-controls {
+        font-size: 0.85rem;
+    }
+
+    #cart-count {
+        font-size: 0.8rem;
+        padding: 2px 6px;
+    }
+
+    .cart-section-header {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+        margin: 0.8rem 0 0.4rem;
+    }
+
+    .cart-group {
+        padding: 0.8rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .subtotal {
+        margin-top: 0.8rem;
+        padding: 0.8rem;
+        font-size: 1.1rem;
+    }
+
+    .subtotal strong {
+        font-size: 1.2rem;
+    }
+
+    #order-total {
+        font-size: 1.4rem;
+    }
+
+    table {
+        font-size: 16px;
+    }
+
+    thead th {
+        padding: 10px;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    .qty-input {
+        width: 44px;
+        font-size: 0.9rem;
+    }
+
+    .view-toggle button img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .view-toggle button {
+        padding: 8px;
+    }
+
+    .confirmation h1 {
+        font-size: 2.2rem;
+    }
+
+    .order-layout {
+        gap: 1.5rem;
+        margin: 1.5rem 2rem;
+    }
+
+    .order-info {
+        padding: 1.5rem;
+        border-radius: 0.8rem;
+    }
+
+    .back-btn {
+        margin-top: 1rem;
+        margin-right: 10px;
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+        border-radius: 8px;
+
+    }
+
+    .checkout-btn {
+        padding: 0.6rem 1rem;
+        font-size: 1.1rem;
+        border-radius: 8px;
+    }
+
+    textarea {
+        padding: 0.6rem;
+        font-size: 1rem;
+        border-radius: 6px;
+    }
+
+    form.fpr1 legend {
+        font-size: 1.1rem;
+    }
+
+    form.fpr1 label {
+        margin-bottom: 0.8rem;
+        font-size: 1.3rem;
+    }
+
+    form.fpr1 input {
+        font-size: 18px;
+    }
+
+    .bfr1 {
+        gap: 2rem;
+        margin-top: 0.8rem;
+        margin-left: 1rem;
+    }
+
+    .bfr1 label {
+        font-size: 0.9rem;
+    }
+
+    .cart-section-header {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+        margin: 0.8rem 0 0.4rem;
+    }
+
+    .confirmation-wrapper {
+        max-width: 600px;
+        padding: 1.5rem;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .thank-you h1 {
+        font-size: 3rem;
+    }
+
+    .thank-you p {
+        font-size: 1.3rem;
+    }
+
+    .pickup-info {
+        padding: 15px;
+        border-width: 3px;
+    }
+
+    .pickup-info legend {
+        font-size: 1.6rem;
+    }
+
+    .pickup-info p {
+        font-size: 1.2rem;
+    }
+
+    .user-info {
+        padding: 0.8rem 1.2rem;
+        border-left-width: 4px;
+    }
+
+    .order-summary {
+        padding: 15px;
+        border-width: 3px;
+    }
+
+    .order-summary legend {
+        font-size: 1.6rem;
+    }
+
+    .order-summary p {
+        font-size: 1.6rem;
+    }
+
+    .payment-info {
+        padding: 15px;
+        border-width: 3px;
+    }
+
+    .payment-info legend {
+        font-size: 1.6rem;
+    }
+
+    .payment-info p {
+        font-size: 1.2rem;
+    }
+
+    .bank-info {
+        padding: 0.8rem 1.2rem;
+        border-left-width: 4px;
+    }
+
+    .bank-info h3 {
+        font-size: 1;
+    }
+
+}

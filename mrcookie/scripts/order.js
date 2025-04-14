@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let cart = {};
     if (localStorage.getItem("restoreCart") === "true") {
         cart = JSON.parse(localStorage.getItem("cookieCart")) || {};
-        localStorage.removeItem("restoreCart"); // remove flag so it doesn't stick around
+        localStorage.removeItem("restoreCart"); 
     } else {
-        cart = {}; // start fresh
+        cart = {};
     }
 
     async function fetchCookiesData() {
@@ -246,14 +246,29 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function renderTable(cookies) {
+
+        const isMobileView = window.innerWidth >= 320 && window.innerWidth <= 640; 
+
         let table = document.createElement("table");
         table.setAttribute("border", "2");
         table.style.width = "100%";
         table.style.borderCollapse = "collapse";
 
         let thead = document.createElement("thead");
-        thead.innerHTML = `
-          <tr>
+
+        if (isMobileView){
+            thead.innerHTML = `
+            <tr>
+            <th>Name</th>
+            <th>Price Big </th>
+            <th>Qty</th>
+            <th>Price Mini</th>
+            <th>Qty</th>
+            </tr>
+        `;
+        } else {
+         thead.innerHTML = `
+            <tr>
             <th>Name</th>
             <th>Description</th>
             <th>Price Big Cookie </th>
@@ -262,6 +277,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <th>Qty</th>
           </tr>
         `;
+        }
         table.appendChild(thead);
 
         let tbody = document.createElement("tbody");
@@ -269,7 +285,16 @@ document.addEventListener("DOMContentLoaded", function () {
         cookies.forEach((cookie, index) => {
             let row = document.createElement("tr");
 
-            row.innerHTML = `
+            if (isMobileView){
+                row.innerHTML = `
+                    <td>${cookie.name}</td>
+                    <td>${parseFloat(cookie.price_large).toFixed(2)}</td>
+                    <td><input type="number" min="0" value="${cart[`${cookie.name}-big`]?.quantity || 0}" class="qty-input" data-name="${cookie.name}" data-size="large"></td>
+                    <td>${parseFloat(cookie.price_mini).toFixed(2)}</td>
+                    <td><input type="number" min="0" value="${cart[`${cookie.name}-big`]?.quantity || 0}" class="qty-input" data-name="${cookie.name}" data-size="mini"></td>
+                `;
+            } else {
+                row.innerHTML = `
                 <td>${cookie.name}</td>
                 <td>${cookie.description}</td>
                 <td>${parseFloat(cookie.price_large).toFixed(2)}</td>
@@ -277,6 +302,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <td>${parseFloat(cookie.price_mini).toFixed(2)}</td>
                 <td><input type="number" min="0" value="${cart[`${cookie.name}-big`]?.quantity || 0}" class="qty-input" data-name="${cookie.name}" data-size="mini"></td>
             `;
+            }
 
             tbody.appendChild(row);
         });
@@ -347,4 +373,5 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.setItem("cookieCart", JSON.stringify(cart));
         });
     }
+
 });

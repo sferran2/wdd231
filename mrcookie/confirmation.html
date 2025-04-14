@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="styles/mrsmall.css" media="(max-width: 640px)">
     <script src="scripts/main.js" defer></script>
     <script src="scripts/summary.js" defer></script>
+    <script src="scripts/confirmation.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,13 +43,12 @@
               </a>
               <button type="button" id="menu" aria-label="Toggle menu"></button>
             </div>
-                <section class="nav-wrap">
+                <section class="nav">
                     <nav id="animeteme">
                         <ul class="nav-list" id="nav-list">
-                            <li><a href="#" class="active" aria-label="Go to Home">Home</a></li>
-                            <li><a href="order.html" aria-label="Menu">Order</a></li>
+                            <li><a href="index.html" aria-label="Go to Home">Home</a></li>
                             <li><a href="about.html" aria-label="Join">About Us</a></li>
-                            <li>
+                            <li><a href="order.html" aria-label="Menu">Order</a></li>
                                 <button id="dark-mode-toggle" aria-label="Toggle dark mode">
                                     <img src="images/darkmode.svg" alt="Dark Mode Toggle" width="24">
                                 </button>
@@ -58,8 +58,54 @@
                 </section>
         </div>
     </header>
-    <main>
-
+    <main class="confirmation-wrapper">
+      <section class="thank-you">
+        <h1>Thank you for supporting our family business!</h1>
+        <p>Thank you so much for your order! Every cookie is made with love, and it means the world to us that you chose to support our family project. We hope each bite brings you as much joy as we had baking it for you!</p>
+      </section>
+  
+      <fieldset class="pickup-info">
+        <legend>  Pickup  Information:  </legend>
+        <div class="user-info">
+          <p><strong>Name:</strong> <span id="full-name"></span></p>
+          <p><strong>Phone:</strong> <span id="phone"></span></p>
+          <p><strong>Email:</strong> <span id="email"></span></p>
+          <p><strong>Pickup Date:</strong> <span id="pickup-date"></span></p>
+          <p><strong>Pickup Time:</strong> <span id="pickup-time"></span></p>
+      </div>
+      </fieldset>
+  
+      <fieldset class="order-summary">
+        <legend>Order Summary: </legend>
+        <ul id="summary-list"></ul>
+        <p><strong>Total:</strong> $<span id="summary-total"></span></p>
+        <section class="cookie-summary">
+          <div class="cookie-box-group">
+            <h3>Big Cookies</h3>
+            <ul id="summary-list-big" class="cookie-list"></ul>
+          </div>
+          <div class="cookie-box-group">
+            <h3>Mini Cookies</h3>
+            <ul id="summary-list-mini" class="cookie-list"></ul>
+          </div>
+        </section>
+      </fieldset>
+  
+      <fieldset class="payment-info">
+        <legend>Payment Method</legend>
+        <p><span id="payment-type"></span></p>
+        <div id="bank-info" class="bank-info" style="display: none;">
+          <h3>Bank Information</h3>
+          <p><strong>Bank Name:</strong> Banco LAFISE</p>
+          <p><strong>Account Number:</strong> 133010476</p>
+          <p><strong>Account Name:</strong>Carlos Roberto Torgan Fusco</p>
+        </div>
+      </fieldset>
+      <fieldset class="comments">
+          <legend>Comments or Special Request</legend>
+          <p>Thanks for this additional information:</p>
+          <p id="comments" class="com1"></p>
+      </fieldset>
     </main>
     <footer class="footer">
       <section class="footer-content">

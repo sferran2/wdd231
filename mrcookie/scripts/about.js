@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   
     function initializeGrid() {
-      for (let i = 0; i < 5; i++) {
+      for (let i = 0; i < 4; i++) {
         const index = (currentIndex + i) % heroImages.length;
         const card = createCard(heroImages[index]);
         heroGrid.appendChild(card);

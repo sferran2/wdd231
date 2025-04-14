@@ -4,7 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const totalDisplay = document.getElementById("order-total");
     const cartCount = document.getElementById("cart-count");
 
-    orderList.innerHTML = "";
+    if (!orderList) {
+        console.warn("No element with ID 'order-list' found — skipping cart rendering.");
+        return;
+    }
 
     let total = 0;
     let count = 0;
@@ -79,6 +82,28 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
     const form = document.querySelector("form.fpr1");
+
+    if (form) {
+        const fields = form.querySelectorAll("input, textarea");
+      
+        if (form) {
+            const fields = form.querySelectorAll("input, textarea");
+          
+            fields.forEach(field => {
+              field.addEventListener("input", () => {
+                const data = {};
+                fields.forEach(f => {
+                  if (f.type === "radio") {
+                    if (f.checked) data[f.name] = f.value;
+                  } else {
+                    data[f.name] = f.value;
+                  }
+                });
+                localStorage.setItem("tempOrderForm", JSON.stringify(data));
+              });
+            });
+        }
+    }
     const confirmBtn = document.getElementById("confirm-btn");
 
     if (form && confirmBtn) {
@@ -98,7 +123,34 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
+        const orderFormData = {
+            fname: form.querySelector('input[name="fname"]').value,
+            lname: form.querySelector('input[name="lname"]').value,
+            phone: form.querySelector('input[name="phone"]').value,
+            email: form.querySelector('input[name="email"]').value,
+            date: form.querySelector('input[name="date"]').value,
+            time: form.querySelector('input[name="time"]').value,
+            paytype: form.querySelector('input[name="paytype"]:checked').value,
+            comments: form.querySelector('textarea[name="comments"]').value,
+          };
+          
+          localStorage.setItem("orderFormData", JSON.stringify(orderFormData));
+
         window.location.href = "confirmation.html";
+        });
+    }
+    const savedTempData = JSON.parse(localStorage.getItem("tempOrderForm"));
+    if (form && savedTempData) {
+        Object.entries(savedTempData).forEach(([name, value]) => {
+        const field = form.querySelector(`[name="${name}"]`);
+        if (field) {
+            if (field.type === "radio") {
+            const radioToCheck = form.querySelector(`input[name="${name}"][value="${value}"]`);
+            if (radioToCheck) radioToCheck.checked = true;
+            } else {
+            field.value = value;
+            }
+        }
         });
     }
 });

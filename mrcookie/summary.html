@@ -42,11 +42,11 @@
               </a>
               <button type="button" id="menu" aria-label="Toggle menu"></button>
             </div>
-                <section class="nav-wrap">
+                <section class="nav">
                     <nav id="animeteme">
                         <ul class="nav-list" id="nav-list">
-                            <li><a href="#" class="active" aria-label="Go to Home">Home</a></li>
-                            <li><a href="order.html" aria-label="Menu">Order</a></li>
+                            <li><a href="index.html" aria-label="Go to Home">Home</a></li>
+                            <li><a href="order.html" class="active" aria-label="Menu">Order</a></li>
                             <li><a href="about.html" aria-label="Join">About Us</a></li>
                             <li>
                                 <button id="dark-mode-toggle" aria-label="Toggle dark mode">
@@ -59,7 +59,7 @@
         </div>
     </header>
     <main class="confirmation">
-        <h2>Order Confirmation</h2>
+        <h1>Order Confirmation</h1>
         <section class="order-layout">
           <div class="order-info">
             <form method="get" action="confirmation.html" class="fpr1">
@@ -79,11 +79,11 @@
                 <legend>Payment Type</legend>
                 <div class="bfr1">
                   <label><input type="radio" name="paytype" value="cash" required> Cash</label>
-                  <label><input type="radio" name="paytype" value="banktransfer"required> Bank Transfer</label>
+                  <label><input type="radio" name="paytype" value="Transfer"required>Transfer</label>
                 </div>
               </fieldset>
               <fieldset>
-                <legend>Comments or Special Requests</legend>
+                <legend for="comments">Comments or Special Requests</legend>
                 <textarea id="comments" name="comments" rows="4" placeholder="Allergies, delivery notes, favorite cookie..."></textarea>
               </fieldset>
             </form>
