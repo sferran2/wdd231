@@ -458,7 +458,7 @@ body.dark-mode #dark-mode-toggle img {
 /*rotation family photos*/
 .hero-flip-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
   max-width: 1000px;
   margin: 0 auto 150px auto;
