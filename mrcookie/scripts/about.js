@@ -1,3 +1,16 @@
+import {
+  setupDarkModeToggle,
+  updateFooterDate,
+  setupHamburgerMenu,
+  trackLastVisit
+} from './main.js';
+
+document.addEventListener("DOMContentLoaded", function () {
+  setupDarkModeToggle();
+  updateFooterDate();
+  setupHamburgerMenu();
+  trackLastVisit();
+});
 document.addEventListener("DOMContentLoaded", () => {
     const heroImages = [
       "images/fam1.webp", 

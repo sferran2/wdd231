@@ -1,3 +1,17 @@
+import {
+  setupDarkModeToggle,
+  updateFooterDate,
+  setupHamburgerMenu,
+  trackLastVisit
+} from './main.js';
+
+document.addEventListener("DOMContentLoaded", function () {
+  setupDarkModeToggle();
+  updateFooterDate();
+  setupHamburgerMenu();
+  trackLastVisit();
+});
+
 document.addEventListener("DOMContentLoaded", function () {
 
     const heroImages = [
