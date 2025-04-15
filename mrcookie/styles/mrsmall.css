@@ -11,7 +11,6 @@
         position: absolute;
         right: 20px;
         top: 5%;
-        z-index: 1001;
     }
 
     #menu::before {
@@ -25,15 +24,15 @@
     #animeteme {
         max-height:0 ;
         overflow: hidden;
-        width: 100%;
+        width: 80%;
         background-color: #FFF4E0; 
     }
 
     #animeteme.open {
         height: 200px;
-        width: 300px;
-        max-height: 200px;
-        padding: 60px 0;
+        width: 400px;
+        max-height: 300px;
+        padding: 10px 120px;
     }
 
     #animeteme ul {
@@ -330,7 +329,7 @@
         height: 200px;
         border-radius: 12px;
         object-fit: cover;
-        margin-left: 28px;
+        margin-left: 115px;
     }
 
     .product-week-section h3 {
@@ -476,9 +475,9 @@
     /*rotation family photos*/
     .hero-flip-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
         gap: 0.5rem;
-        max-width: 95%;
+        max-width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         margin: 0 auto 60px auto;
         padding: 10px;
         perspective: 500px;
@@ -486,7 +485,8 @@
 
     .flip-card {
         width: 100%;
-        height: 120px;
+        height: 160px;
+        aspect-ratio: 3 / 2; 
         position: relative;
         transform-style: preserve-3d;
         transition: transform 0.8s ease-in-out;
@@ -505,6 +505,7 @@
         backface-visibility: hidden;
         border-radius: 8px;
         overflow: hidden;
+        object-fit: cover; 
     }
 
     .flip-card-front img,
