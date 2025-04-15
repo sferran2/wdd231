@@ -332,7 +332,6 @@ body.dark-mode #dark-mode-toggle img {
   margin-top: .5rem;
   font-size: 1.5rem;
   text-align: justify;
-  color: #FFF4E0;
 }
 
 .order-now-btn {
@@ -965,7 +964,7 @@ form.fpr1 input {
 
 .confirmation-wrapper {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   background-color: #EEDECA;
   border-radius: 12px;
   padding: 2rem;
@@ -991,7 +990,7 @@ form.fpr1 input {
 }
 
 .pickup-info legend {
-  color: #A93F19;
+  color: #5C2618;
   font-size: 1.8rem;
 }
 
@@ -1017,7 +1016,7 @@ form.fpr1 input {
 }
 
 .order-summary legend {
-  color: #A93F19;
+  color: #5C2618;
   font-size: 1.8rem;
 }
 
@@ -1034,7 +1033,7 @@ form.fpr1 input {
 }
 
 .payment-info legend {
-  color: #A93F19;
+  color: #5C2618;
   font-size: 1.8rem;
 }
 
@@ -1052,7 +1051,7 @@ form.fpr1 input {
 }
 .bank-info h3 {
   margin-top: 0;
-  color: #A93F19;
+  color: #5C2618;
 }
 
 section {
@@ -1078,7 +1077,7 @@ section {
 }
 
 .cookie-box-group h3 {
-  color: #A93F19;
+  color: #5C2618;
   font-size: 1.4rem;
   margin-bottom: 1rem;
   text-align: center;
@@ -1121,7 +1120,7 @@ section {
 }
 
 .comments legend {
-  color: #A93F19;
+  color: #5C2618;
   font-size: 1.8rem;
 }
 
