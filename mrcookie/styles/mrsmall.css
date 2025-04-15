@@ -58,15 +58,7 @@
   #menu.open::before {
     content: "✖️";
     font-size: 24px;
-    color: white;
-  }
-
-  #menu::before {
-    color: #f9f9f9; /* light icon for dark background */
-  }
-
-  #menu.open::before {
-    color: #f9f9f9; /* soft red or any light tone for close icon */
+    color: #270503;
   }
 
   #animeteme {
