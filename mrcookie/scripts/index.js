@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
             image.width = 300;
             image.height = 400;
             image.style.gridArea = "image";
+            image.loading = "lazy";
     
             const invite = document.createElement("h2");
             invite.innerHTML = featured.featured_invite.replace(/\n/g, "<br>");
