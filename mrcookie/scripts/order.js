@@ -133,6 +133,16 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("cookieCart", JSON.stringify(cart));
     }
 
+    function openDialog(cookie) {
+        const dialog = document.getElementById("cookie-dialog");
+        const title = document.getElementById("dialog-title");
+        const description = document.getElementById("dialog-description");
+      
+        title.textContent = cookie.name;
+        description.textContent = cookie.extra_description;
+        dialog.showModal();
+      }
+
     function displayCookies(cookies) {
         cardsContainer.innerHTML = ""; 
 
@@ -145,6 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
             image.alt = `${cookie.name} image`;
             image.loading = "lazy";
             image.classList.add("cookie-img");
+            image.addEventListener("click", () => openDialog(cookie));
 
             let info = document.createElement("div");
             info.classList.add("cookie-info");
@@ -369,6 +380,11 @@ document.addEventListener("DOMContentLoaded", function () {
         cardsContainer.style.display = "none";
         gridViewBtn.classList.remove("active");
         listViewBtn.classList.add("active");
+    });
+
+    const closeBtn = document.getElementById("close-dialog");
+    closeBtn?.addEventListener("click", () => {
+        document.getElementById("cookie-dialog").close();
     });
 
     fetchCookiesData();
